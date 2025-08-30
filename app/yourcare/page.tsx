@@ -3,6 +3,7 @@ import { Problem } from "@/components/yourcare/problem"
 import { Solution } from "@/components/yourcare/solution"
 import { HowItWorks } from "@/components/yourcare/how-it-works"
 import { DashboardDemo } from "@/components/yourcare/dashboard-demo"
+import { AIAgentSimulation } from "@/components/yourcare/ai-agent-simulation"
 import { Businesses } from "@/components/yourcare/businesses"
 import { Testimonials } from "@/components/yourcare/testimonials"
 import { FinalCTA } from "@/components/yourcare/final-cta"
@@ -16,6 +17,7 @@ export default function Page() {
       <Solution />
       <DashboardDemo />
       <HowItWorks />
+      <AIAgentSimulation />
       <Businesses />
       <Testimonials />
       <FinalCTA />
