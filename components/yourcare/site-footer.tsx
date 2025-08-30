@@ -14,13 +14,13 @@ export function SiteFooter() {
           
           <nav className="flex flex-wrap gap-6 text-sm">
             <Link href="/privacy" className="text-gray-300 hover:text-white transition-colors">
-              Privacy
+              Privacy Policy
             </Link>
             <Link href="/terms" className="text-gray-300 hover:text-white transition-colors">
-              Terms
+              Terms of Service
             </Link>
             <Link href="/contact" className="text-gray-300 hover:text-white transition-colors">
-              Contact
+              Contact Us
             </Link>
           </nav>
         </div>
