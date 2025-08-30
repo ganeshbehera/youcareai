@@ -1,11 +1,21 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import Link from "next/link"
 import { ArrowRight, Play, Sparkles } from "lucide-react"
+import { WaitlistModal } from "./waitlist-modal"
+import { useWaitlistModal } from "@/hooks/use-waitlist-modal"
 
 export function Hero() {
+  const { isOpen, openModal, closeModal, modalConfig } = useWaitlistModal()
+
   return (
+    <>
+      <WaitlistModal 
+        isOpen={isOpen} 
+        onClose={closeModal}
+        title={modalConfig.title}
+        description={modalConfig.description}
+      />
     <header className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
@@ -70,22 +80,23 @@ export function Hero() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 mt-8 animate-fade-in-up animation-delay-2000">
-            <Link href="#final-cta">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-                Join Waitlist
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </Button>
-            </Link>
-            <Link href="#how-it-works">
-              <Button
-                variant="outline"
-                size="lg"
-                className="border-2 border-gray-300 hover:border-blue-500 bg-white/80 backdrop-blur-sm text-gray-700 hover:text-blue-600 px-8 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
-              >
-                <Play className="mr-2 w-5 h-5" />
-                Watch Demo
-              </Button>
-            </Link>
+            <Button 
+              size="lg" 
+              onClick={() => openModal("Join the Waitlist", "Be among the first 10,000 users to get early access and 6 months free when we launch.")}
+              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+            >
+              Join Waitlist
+              <ArrowRight className="ml-2 w-5 h-5" />
+            </Button>
+            <Button
+              variant="outline"
+              size="lg"
+              onClick={() => openModal("Watch Demo", "Get early access to see YourCareAI in action. Join our waitlist for exclusive demo access.")}
+              className="border-2 border-gray-300 hover:border-blue-500 bg-white/80 backdrop-blur-sm text-gray-700 hover:text-blue-600 px-8 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+            >
+              <Play className="mr-2 w-5 h-5" />
+              Watch Demo
+            </Button>
           </div>
 
           {/* Trust indicators */}
@@ -108,5 +119,6 @@ export function Hero() {
         </div>
       </div>
     </header>
+    </>
   )
 }

@@ -1,23 +1,21 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { ArrowRight, Mail, Users, Clock, Shield, CheckCircle } from "lucide-react"
-import { Card, CardContent } from "@/components/ui/card"
-import { useState } from "react"
+import { ArrowRight, Mail, Users, Clock, Shield } from "lucide-react"
+import { WaitlistModal } from "./waitlist-modal"
+import { useWaitlistModal } from "@/hooks/use-waitlist-modal"
 
 export function FinalCTA() {
-  const [email, setEmail] = useState("")
-  const [isSubmitted, setIsSubmitted] = useState(false)
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    // Here you would typically send the email to your backend
-    setIsSubmitted(true)
-    setTimeout(() => setIsSubmitted(false), 3000)
-  }
+  const { isOpen, openModal, closeModal, modalConfig } = useWaitlistModal()
 
   return (
+    <>
+      <WaitlistModal 
+        isOpen={isOpen} 
+        onClose={closeModal}
+        title={modalConfig.title}
+        description={modalConfig.description}
+      />
     <section id="final-cta" className="relative py-16 md:py-24 bg-gradient-to-br from-blue-900 via-purple-900 to-indigo-900 overflow-hidden">
       {/* Background effects */}
       <div className="absolute inset-0 opacity-20">
@@ -54,39 +52,16 @@ export function FinalCTA() {
           </p>
         </div>
 
-        {/* Waitlist Form */}
+        {/* Waitlist CTA */}
         <div className="animate-fade-in-up animation-delay-1000">
-          <Card className="bg-white/10 backdrop-blur-md border-white/20 mb-12">
-            <CardContent className="p-8">
-              {!isSubmitted ? (
-                <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-                  <div className="flex-1">
-                    <Input
-                      type="email"
-                      placeholder="Enter your email address"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                      className="bg-white/90 border-white/30 text-gray-900 placeholder-gray-500 h-12 text-lg"
-                      required
-                    />
-                  </div>
-                  <Button 
-                    type="submit"
-                    size="lg"
-                    className="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white px-8 h-12 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
-                  >
-                    Join Waitlist
-                    <ArrowRight className="ml-2 w-5 h-5" />
-                  </Button>
-                </form>
-              ) : (
-                <div className="flex items-center justify-center gap-3 text-green-400">
-                  <CheckCircle className="w-6 h-6" />
-                  <span className="text-lg font-semibold">You're on the list! Check your email.</span>
-                </div>
-              )}
-            </CardContent>
-          </Card>
+          <Button 
+            size="lg"
+            onClick={() => openModal("Be Among the First 10,000", "Join our exclusive waitlist and get 6 months free when we launch. Plus early access to our revolutionary AI health platform.")}
+            className="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white px-12 py-6 text-xl font-bold rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:scale-110 mb-12"
+          >
+            Join Waitlist Now
+            <ArrowRight className="ml-3 w-6 h-6" />
+          </Button>
         </div>
 
         {/* Benefits */}
@@ -129,5 +104,6 @@ export function FinalCTA() {
         </div>
       </div>
     </section>
+    </>
   )
 }
