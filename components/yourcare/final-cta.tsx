@@ -18,7 +18,7 @@ export function FinalCTA() {
   }
 
   return (
-    <section id="final-cta" className="relative py-20 md:py-32 bg-gradient-to-br from-blue-900 via-purple-900 to-indigo-900 overflow-hidden">
+    <section id="final-cta" className="relative py-16 md:py-24 bg-gradient-to-br from-blue-900 via-purple-900 to-indigo-900 overflow-hidden">
       {/* Background effects */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute inset-0" style={{

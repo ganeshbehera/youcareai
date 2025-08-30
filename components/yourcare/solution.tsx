@@ -50,7 +50,7 @@ const features = [
 
 export function Solution() {
   return (
-    <section id="solution" className="relative py-20 md:py-32 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
+    <section id="solution" className="relative py-16 md:py-24 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-20 right-10 w-32 h-32 bg-blue-500 rounded-full blur-3xl"></div>

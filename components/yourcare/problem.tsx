@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/ui/card"
 
 export function Problem() {
   return (
-    <section id="problem" className="relative py-20 md:py-32 bg-gradient-to-b from-white to-gray-50 overflow-hidden">
+    <section id="problem" className="relative py-16 md:py-24 bg-gradient-to-b from-white to-gray-50 overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-20 left-10 w-32 h-32 bg-red-500 rounded-full blur-3xl"></div>
