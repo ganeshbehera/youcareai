@@ -5,15 +5,15 @@ import Image from "next/image"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Terms of Service - YourCareAI | Legal Terms & Conditions",
-  description: "YourCareAI's terms of service and legal conditions. Understand your rights and responsibilities when using our AI health monitoring platform.",
+  title: "Terms of Service - YourCareAI | AI Platform Legal Terms",
+  description: "YourCareAI's terms of service for our enterprise AI health intelligence platform. Understand your rights and responsibilities when using our APIs and platform.",
   openGraph: {
     title: "Terms of Service - YourCareAI",
-    description: "YourCareAI's terms of service and legal conditions for our AI health monitoring platform.",
+    description: "YourCareAI's terms of service and legal conditions for our enterprise AI health intelligence platform and APIs.",
   },
   twitter: {
     title: "Terms of Service - YourCareAI",
-    description: "YourCareAI's terms of service and legal conditions for our AI health monitoring platform.",
+    description: "YourCareAI's terms of service and legal conditions for our enterprise AI health intelligence platform and APIs.",
   },
   robots: {
     index: true,
@@ -57,21 +57,21 @@ export default function TermsPage() {
           <section>
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">Agreement to Terms</h2>
             <p className="text-gray-700 leading-relaxed">
-              By accessing and using YourCareAI's website and services (operated by Digitbite Limited), you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by the above, please do not use this service.
+              By accessing and using YourCareAI's AI health intelligence platform and APIs (operated by Digitbite Limited), you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by the above, please do not use this platform.
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">Description of Service</h2>
+            <h2 className="text-2xl font-semibold text-gray-900 mb-4">Description of Platform</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
-              YourCareAI provides AI-powered health monitoring and predictive analytics services designed to help users:
+              YourCareAI provides an enterprise-grade AI health intelligence platform with APIs and software tools designed to enable organizations to:
             </p>
             <ul className="list-disc list-inside text-gray-700 space-y-2">
-              <li>Monitor health metrics and trends</li>
-              <li>Receive personalized health insights</li>
-              <li>Get early risk detection and alerts</li>
-              <li>Access care coordination tools</li>
-              <li>Connect with healthcare providers</li>
+              <li>Integrate AI-powered health analytics into their applications</li>
+              <li>Process multi-modal health data using machine learning models</li>
+              <li>Access predictive health intelligence through RESTful APIs</li>
+              <li>Deploy scalable health AI solutions in cloud environments</li>
+              <li>Leverage transformer models for biomarker analysis</li>
             </ul>
           </section>
 
@@ -79,29 +79,29 @@ export default function TermsPage() {
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">Medical Disclaimer</h2>
             <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-4">
               <p className="text-yellow-800 font-medium">
-                IMPORTANT: YourCareAI is not a substitute for professional medical advice, diagnosis, or treatment.
+                IMPORTANT: YourCareAI is a technology platform providing AI tools and APIs. It is not a medical device or healthcare service provider.
               </p>
             </div>
             <ul className="list-disc list-inside text-gray-700 space-y-2">
-              <li>Our AI predictions and insights are for informational purposes only</li>
-              <li>Always seek the advice of your physician or qualified health provider</li>
-              <li>Never disregard professional medical advice because of our service</li>
-              <li>In case of medical emergency, contact emergency services immediately</li>
-              <li>We do not provide medical diagnosis or treatment recommendations</li>
+              <li>Our platform provides AI models and APIs for integration by qualified organizations</li>
+              <li>End-user applications built with our platform must comply with applicable healthcare regulations</li>
+              <li>Organizations using our platform are responsible for their own regulatory compliance</li>
+              <li>Our AI models are designed for integration by healthcare professionals and organizations</li>
+              <li>We provide technology infrastructure, not direct medical advice or diagnosis</li>
             </ul>
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">User Responsibilities</h2>
-            <p className="text-gray-700 leading-relaxed mb-4">As a user of YourCareAI, you agree to:</p>
+            <h2 className="text-2xl font-semibold text-gray-900 mb-4">Platform Usage Responsibilities</h2>
+            <p className="text-gray-700 leading-relaxed mb-4">As an organization or developer using YourCareAI's platform, you agree to:</p>
             <ul className="list-disc list-inside text-gray-700 space-y-2">
-              <li>Provide accurate and truthful health information</li>
-              <li>Use the service in compliance with applicable laws</li>
-              <li>Maintain the confidentiality of your account credentials</li>
-              <li>Not share your account with others</li>
-              <li>Report any security breaches or unauthorized access</li>
-              <li>Use the service for personal, non-commercial purposes only</li>
-              <li>Not attempt to reverse engineer or compromise our systems</li>
+              <li>Use the platform and APIs in compliance with applicable laws and regulations</li>
+              <li>Maintain the security and confidentiality of your API credentials</li>
+              <li>Implement appropriate data protection and privacy measures</li>
+              <li>Ensure proper regulatory compliance for healthcare applications</li>
+              <li>Report any security vulnerabilities or unauthorized access immediately</li>
+              <li>Use the platform according to your subscription tier and usage limits</li>
+              <li>Not attempt to reverse engineer, decompile, or compromise our AI models</li>
             </ul>
           </section>
 
@@ -140,9 +140,9 @@ export default function TermsPage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">Service Availability</h2>
+            <h2 className="text-2xl font-semibold text-gray-900 mb-4">Platform Availability and SLA</h2>
             <p className="text-gray-700 leading-relaxed">
-              We strive to maintain high service availability but cannot guarantee uninterrupted access. We reserve the right to modify, suspend, or discontinue any aspect of our service with or without notice. We are not liable for any interruption of service or loss of data.
+              We strive to maintain 99.9% platform uptime but cannot guarantee uninterrupted API access. We reserve the right to perform maintenance, updates, or modifications to our platform with reasonable notice. We are not liable for any interruption of service or data processing delays during scheduled maintenance windows.
             </p>
           </section>
 
@@ -153,24 +153,24 @@ export default function TermsPage() {
             </p>
             <ul className="list-disc list-inside text-gray-700 space-y-2">
               <li>Any indirect, incidental, or consequential damages</li>
-              <li>Health decisions made based on our AI predictions</li>
-              <li>Data loss or security breaches beyond our control</li>
-              <li>Third-party device or service failures</li>
-              <li>Any damages exceeding the amount paid for our services</li>
+              <li>Decisions made by end-users of applications built with our platform</li>
+              <li>Data processing errors or API response delays</li>
+              <li>Third-party integration failures or service dependencies</li>
+              <li>Any damages exceeding the amount paid for platform subscriptions</li>
             </ul>
           </section>
 
           <section>
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">Indemnification</h2>
             <p className="text-gray-700 leading-relaxed">
-              You agree to indemnify and hold harmless YourCareAI and Digitbite Limited from any claims, damages, or expenses arising from your use of our service, violation of these terms, or infringement of any rights of another party.
+              You agree to indemnify and hold harmless YourCareAI and Digitbite Limited from any claims, damages, or expenses arising from your use of our platform, violation of these terms, misuse of our APIs, or infringement of any rights of another party.
             </p>
           </section>
 
           <section>
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">Termination</h2>
             <p className="text-gray-700 leading-relaxed">
-              We may terminate or suspend your account and access to our service immediately, without prior notice, for conduct that we believe violates these Terms or is harmful to other users, us, or third parties, or for any other reason in our sole discretion.
+              We may terminate or suspend your platform access and API credentials immediately, without prior notice, for conduct that we believe violates these Terms, exceeds usage limits, or is harmful to our platform infrastructure, other users, or third parties, or for any other reason in our sole discretion.
             </p>
           </section>
 
@@ -184,7 +184,7 @@ export default function TermsPage() {
           <section>
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">Changes to Terms</h2>
             <p className="text-gray-700 leading-relaxed">
-              We reserve the right to modify these Terms at any time. We will notify users of any material changes by posting the updated Terms on our website. Your continued use of the service after such changes constitutes acceptance of the new Terms.
+              We reserve the right to modify these Terms at any time. We will notify platform users of any material changes by posting the updated Terms on our website and sending notifications to registered developers. Your continued use of the platform after such changes constitutes acceptance of the new Terms.
             </p>
           </section>
 
