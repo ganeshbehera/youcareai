@@ -38,7 +38,7 @@ export function FinalCTA() {
             <span className="text-sm font-medium text-blue-100">Coming Q2 2026 • Pre-Launch Access</span>
           </div>
 
-          <h2 className="text-4xl md:text-6xl font-bold mb-6 text-white">
+          <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-6 text-white px-4">
             Early Access to
             <br />
             <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
@@ -46,7 +46,7 @@ export function FinalCTA() {
             </span>
           </h2>
 
-          <p className="text-xl md:text-2xl text-blue-100 mb-12 max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl md:text-2xl text-blue-100 mb-12 max-w-3xl mx-auto px-4">
             Request developer access to our <strong className="text-white">health intelligence APIs</strong>. 
             Join leading healthcare organizations building with YourCareAI.
           </p>
@@ -57,15 +57,15 @@ export function FinalCTA() {
           <Button 
             size="lg"
             onClick={() => openModal("Request Developer Access", "Get early access to our enterprise health intelligence APIs. Join leading healthcare organizations building with YourCareAI platform.")}
-            className="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white px-12 py-6 text-xl font-bold rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:scale-110 mb-12"
+            className="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white px-8 sm:px-12 py-4 sm:py-6 text-lg sm:text-xl font-bold rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:scale-110 mb-12 w-full max-w-sm sm:w-auto"
           >
             Request API Access
-            <ArrowRight className="ml-3 w-6 h-6" />
+            <ArrowRight className="ml-2 sm:ml-3 w-5 h-5 sm:w-6 sm:h-6" />
           </Button>
         </div>
 
         {/* Benefits */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 animate-fade-in-up animation-delay-1500">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-4 mb-12 animate-fade-in-up animation-delay-1500 px-4">
           {[
             {
               icon: Shield,
@@ -84,11 +84,11 @@ export function FinalCTA() {
             }
           ].map((benefit, index) => (
             <div key={index} className="text-center">
-              <div className="inline-flex items-center justify-center w-12 h-12 bg-white/10 rounded-full mb-4">
-                <benefit.icon className="w-6 h-6 text-blue-300" />
+              <div className="inline-flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 bg-white/10 rounded-full mb-4">
+                <benefit.icon className="w-5 h-5 sm:w-6 sm:h-6 text-blue-300" />
               </div>
-              <h3 className="text-lg font-semibold text-white mb-2">{benefit.title}</h3>
-              <p className="text-blue-200 text-sm">{benefit.description}</p>
+              <h3 className="text-base sm:text-lg font-semibold text-white mb-2">{benefit.title}</h3>
+              <p className="text-blue-200 text-xs sm:text-sm">{benefit.description}</p>
             </div>
           ))}
         </div>

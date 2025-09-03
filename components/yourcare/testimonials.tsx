@@ -24,35 +24,37 @@ const internalReviews = [
 
 export function Testimonials() {
   return (
-    <section id="testimonials" className="mx-auto max-w-6xl px-4 py-16 md:py-20">
+    <section id="testimonials" className="mx-auto max-w-6xl px-4 py-12 sm:py-16 md:py-20">
       <div className="text-center mb-12">
-        <h2 className="text-pretty text-3xl md:text-4xl font-bold mb-4" style={{ color: "#111827" }}>
+        <h2 className="text-pretty text-2xl sm:text-3xl md:text-4xl font-bold mb-4" style={{ color: "#111827" }}>
           Internal Testing Reviews
         </h2>
-        <div className="flex items-center justify-center gap-2 mb-4">
-          {[...Array(5)].map((_, i) => (
-            <Star key={i} size={24} className="fill-yellow-400 text-yellow-400" />
-          ))}
-          <span className="ml-2 text-lg font-semibold">Early feedback from our development team</span>
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-2 mb-4">
+          <div className="flex gap-1">
+            {[...Array(5)].map((_, i) => (
+              <Star key={i} size={20} className="sm:w-6 sm:h-6 fill-yellow-400 text-yellow-400" />
+            ))}
+          </div>
+          <span className="text-base sm:text-lg font-semibold text-center">Early feedback from our development team</span>
         </div>
       </div>
       
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
         {internalReviews.map((review, index) => (
           <Card key={index} className="h-full">
-            <CardContent className="p-6">
+            <CardContent className="p-4 sm:p-6">
               <div className="flex gap-1 mb-4">
                 {[...Array(review.rating)].map((_, i) => (
-                  <Star key={i} size={18} className="fill-yellow-400 text-yellow-400" />
+                  <Star key={i} size={16} className="sm:w-[18px] sm:h-[18px] fill-yellow-400 text-yellow-400" />
                 ))}
               </div>
-              <Quote size={22} className="text-gray-400 mb-3" />
-              <p className="text-base leading-relaxed mb-4" style={{ color: "#6C757D" }}>
+              <Quote size={20} className="sm:w-[22px] sm:h-[22px] text-gray-400 mb-3" />
+              <p className="text-sm sm:text-base leading-relaxed mb-4" style={{ color: "#6C757D" }}>
                 "{review.quote}"
               </p>
               <div className="border-t pt-4">
-                <p className="font-semibold text-gray-900">{review.author}</p>
-                <p className="text-sm text-gray-600">{review.title}</p>
+                <p className="font-semibold text-gray-900 text-sm sm:text-base">{review.author}</p>
+                <p className="text-xs sm:text-sm text-gray-600">{review.title}</p>
               </div>
             </CardContent>
           </Card>

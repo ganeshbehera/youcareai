@@ -21,8 +21,8 @@ export function Hero() {
       {/* Animated gradient background */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-50/30 via-purple-50/20 to-indigo-50/30"></div>
       
-      {/* Floating geometric shapes */}
-      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+      {/* Floating geometric shapes - hidden on mobile for performance */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden hidden md:block">
         {/* Large floating circles */}
         <div className="absolute top-20 left-20 w-32 h-32 bg-gradient-to-br from-blue-200/20 to-purple-200/20 rounded-full animate-float-slow"></div>
         <div className="absolute top-40 right-32 w-24 h-24 bg-gradient-to-br from-purple-200/20 to-indigo-200/20 rounded-full animate-float-reverse animation-delay-1000"></div>
@@ -69,7 +69,7 @@ export function Hero() {
               alt="YourCareAI Logo"
               width={240}
               height={96}
-              className="mx-auto"
+              className="mx-auto w-48 h-auto md:w-60 lg:w-auto"
               priority
             />
           </div>
@@ -83,7 +83,7 @@ export function Hero() {
           {/* Main headline */}
           <h1
             id="hero-title"
-            className="text-4xl md:text-6xl lg:text-7xl font-black leading-[1.1] text-gray-900 animate-fade-in-up animation-delay-500 max-w-5xl"
+            className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-black leading-[1.1] text-gray-900 animate-fade-in-up animation-delay-500 max-w-5xl px-4"
           >
             AI-Powered Health
             <br />
@@ -93,44 +93,44 @@ export function Hero() {
           </h1>
 
           {/* Subtitle */}
-          <p className="text-lg md:text-xl leading-relaxed max-w-3xl text-gray-600 animate-fade-in-up animation-delay-700 font-medium">
+          <p className="text-base sm:text-lg md:text-xl leading-relaxed max-w-3xl text-gray-600 animate-fade-in-up animation-delay-700 font-medium px-4">
             Advanced machine learning algorithms analyze 500+ biomarkers to predict health risks <strong className="text-gray-900">6 months early</strong> with 94% accuracy. 
             Enterprise-grade SaaS platform <strong className="text-gray-900">launching Q2 2026</strong>.
           </p>
 
           {/* Stats */}
-          <div className="grid grid-cols-3 gap-8 md:gap-16 mt-8 animate-fade-in-up animation-delay-900">
+          <div className="grid grid-cols-3 gap-4 sm:gap-8 md:gap-16 mt-8 animate-fade-in-up animation-delay-900 px-4">
             <div className="text-center">
-              <div className="text-2xl md:text-4xl font-black text-gray-900 mb-1">500+</div>
-              <div className="text-gray-600 font-medium">Biomarkers</div>
+              <div className="text-xl sm:text-2xl md:text-4xl font-black text-gray-900 mb-1">500+</div>
+              <div className="text-sm sm:text-base text-gray-600 font-medium">Biomarkers</div>
             </div>
             <div className="text-center">
-              <div className="text-2xl md:text-4xl font-black text-gray-900 mb-1">94%</div>
-              <div className="text-gray-600 font-medium">Test Accuracy</div>
+              <div className="text-xl sm:text-2xl md:text-4xl font-black text-gray-900 mb-1">94%</div>
+              <div className="text-sm sm:text-base text-gray-600 font-medium">Test Accuracy</div>
             </div>
             <div className="text-center">
-              <div className="text-2xl md:text-4xl font-black text-gray-900 mb-1">Q2</div>
-              <div className="text-gray-600 font-medium">2026 Launch</div>
+              <div className="text-xl sm:text-2xl md:text-4xl font-black text-gray-900 mb-1">Q2</div>
+              <div className="text-sm sm:text-base text-gray-600 font-medium">2026 Launch</div>
             </div>
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 mt-12 animate-fade-in-up animation-delay-1100">
+          <div className="flex flex-col sm:flex-row gap-4 mt-12 animate-fade-in-up animation-delay-1100 px-4">
             <Button 
               size="lg" 
               onClick={() => openModal("Request Platform Demo", "Get exclusive access to our AI health intelligence platform and see how it transforms healthcare data into predictive insights.")}
-              className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-10 py-4 text-lg font-semibold rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-[1.02] border-0"
+              className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-6 sm:px-10 py-4 text-base sm:text-lg font-semibold rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-[1.02] border-0 w-full sm:w-auto"
             >
               Request Demo
-              <ArrowRight className="ml-2 w-6 h-6" />
+              <ArrowRight className="ml-2 w-5 h-5 sm:w-6 sm:h-6" />
             </Button>
             <Button
               variant="outline"
               size="lg"
               onClick={() => openModal("View API Documentation", "Explore our comprehensive API documentation and integration guides for developers and healthcare organizations.")}
-              className="border-2 border-gray-200 hover:border-gray-300 bg-white text-gray-900 hover:text-gray-900 px-10 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02]"
+              className="border-2 border-gray-200 hover:border-gray-300 bg-white text-gray-900 hover:text-gray-900 px-6 sm:px-10 py-4 text-base sm:text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] w-full sm:w-auto"
             >
-              <Play className="mr-2 w-6 h-6" />
+              <Play className="mr-2 w-5 h-5 sm:w-6 sm:h-6" />
               View API Docs
             </Button>
           </div>
