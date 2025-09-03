@@ -95,7 +95,7 @@ export function Hero() {
           {/* Subtitle */}
           <p className="text-lg md:text-xl leading-relaxed max-w-3xl text-gray-600 animate-fade-in-up animation-delay-700 font-medium">
             Advanced machine learning algorithms analyze 500+ biomarkers to predict health risks <strong className="text-gray-900">6 months early</strong> with 94% accuracy. 
-            Enterprise-grade SaaS platform <strong className="text-gray-900">launching Q2 2025</strong>.
+            Enterprise-grade SaaS platform <strong className="text-gray-900">launching Q2 2026</strong>.
           </p>
 
           {/* Stats */}
@@ -110,7 +110,7 @@ export function Hero() {
             </div>
             <div className="text-center">
               <div className="text-2xl md:text-4xl font-black text-gray-900 mb-1">Q2</div>
-              <div className="text-gray-600 font-medium">2025 Launch</div>
+              <div className="text-gray-600 font-medium">2026 Launch</div>
             </div>
           </div>
 

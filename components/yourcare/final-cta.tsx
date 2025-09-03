@@ -35,7 +35,7 @@ export function FinalCTA() {
         <div className="animate-fade-in-up">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full mb-8 border border-white/20">
             <Clock className="w-4 h-4 text-blue-300" />
-            <span className="text-sm font-medium text-blue-100">Coming Q2 2025 • Pre-Launch Access</span>
+            <span className="text-sm font-medium text-blue-100">Coming Q2 2026 • Pre-Launch Access</span>
           </div>
 
           <h2 className="text-4xl md:text-6xl font-bold mb-6 text-white">

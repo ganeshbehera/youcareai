@@ -34,7 +34,7 @@ export function SiteFooter() {
         {/* Bottom Section */}
         <div className="border-t border-gray-800 pt-8 space-y-4">
           <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
-            <p>© 2025 YourCareAI. Preventing disease with AI.</p>
+            <p>© 2026 YourCareAI. Preventing disease with AI.</p>
             <p className="mt-2 md:mt-0">Built with ❤️ for better health outcomes</p>
           </div>
           

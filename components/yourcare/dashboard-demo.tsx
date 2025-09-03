@@ -23,7 +23,7 @@ export function DashboardDemo() {
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 rounded-full mb-6 animate-fade-in">
             <Activity className="w-5 h-5 text-blue-600" />
-            <span className="text-sm font-medium text-blue-700">Platform Preview • Coming Q2 2025</span>
+            <span className="text-sm font-medium text-blue-700">Platform Preview • Coming Q2 2026</span>
           </div>
           
           <h2 className="text-4xl md:text-5xl font-bold mb-6 animate-fade-in-up animation-delay-500">
