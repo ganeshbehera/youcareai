@@ -93,15 +93,7 @@ export function FinalCTA() {
           ))}
         </div>
 
-        {/* Trust indicators */}
-        <div className="animate-fade-in-up animation-delay-2000">
-          <p className="text-blue-200 text-sm mb-4">Backed by leading healthcare institutions</p>
-          <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
-            <div className="text-white/70 font-semibold">Stanford Health</div>
-            <div className="text-white/70 font-semibold">Kaiser Permanente</div>
-            <div className="text-white/70 font-semibold">Mayo Clinic</div>
-          </div>
-        </div>
+
       </div>
     </section>
     </>

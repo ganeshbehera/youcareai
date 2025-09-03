@@ -99,16 +99,7 @@ export function Hero() {
             </Button>
           </div>
 
-          {/* Trust indicators */}
-          <div className="mt-12 animate-fade-in-up animation-delay-2500">
-            <p className="text-sm text-gray-500 mb-4">Trusted by leading health systems</p>
-            <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
-              <div className="text-gray-400 font-semibold">Stanford Health</div>
-              <div className="text-gray-400 font-semibold">Kaiser Permanente</div>
-              <div className="text-gray-400 font-semibold">Mayo Clinic</div>
-              <div className="text-gray-400 font-semibold">Cleveland Clinic</div>
-            </div>
-          </div>
+
         </div>
       </div>
 

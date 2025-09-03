@@ -11,13 +11,13 @@ const testimonials = [
   {
     quote: "As a cardiologist, I've seen 40% fewer emergency visits from patients using YourCareAI. The predictive alerts are game-changing.",
     author: "Dr. Michael Rodriguez, MD",
-    title: "Cardiologist, Stanford Health",
+    title: "Cardiologist, Major Health System",
     rating: 5
   },
   {
     quote: "Our health system saved $2.3M in the first year using YourCareAI for chronic disease management across 10,000 patients.",
     author: "Lisa Thompson",
-    title: "VP of Population Health, Kaiser Permanente",
+    title: "VP of Population Health, Regional Health Network",
     rating: 5
   }
 ]
