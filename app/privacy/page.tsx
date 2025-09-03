@@ -29,7 +29,7 @@ export default function PrivacyPage() {
           <section>
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">Introduction</h2>
             <p className="text-gray-700 leading-relaxed">
-              YourCareAI ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services. We are dedicated to maintaining the highest standards of data protection and transparency.
+              YourCareAI, operated by Digitbite Limited ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services. We are dedicated to maintaining the highest standards of data protection and transparency.
             </p>
           </section>
 
@@ -146,8 +146,8 @@ export default function PrivacyPage() {
             <div className="bg-gray-50 p-4 rounded-lg">
               <p className="text-gray-700">
                 <strong>Email:</strong> privacy@yourcareai.com<br />
-                <strong>Address:</strong> YourCareAI Privacy Team<br />
-                Suite A 82 James Carter Road<br />
+                <strong>Company:</strong> Digitbite Limited<br />
+                <strong>Address:</strong> Suite A 82 James Carter Road<br />
                 Mildenhall, Bury St. Edmunds, England, IP28 7DE
               </p>
             </div>

@@ -29,7 +29,7 @@ export default function TermsPage() {
           <section>
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">Agreement to Terms</h2>
             <p className="text-gray-700 leading-relaxed">
-              By accessing and using YourCareAI's website and services, you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by the above, please do not use this service.
+              By accessing and using YourCareAI's website and services (operated by Digitbite Limited), you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by the above, please do not use this service.
             </p>
           </section>
 
@@ -121,7 +121,7 @@ export default function TermsPage() {
           <section>
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">Limitation of Liability</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
-              To the fullest extent permitted by law, YourCareAI shall not be liable for:
+              To the fullest extent permitted by law, YourCareAI and Digitbite Limited shall not be liable for:
             </p>
             <ul className="list-disc list-inside text-gray-700 space-y-2">
               <li>Any indirect, incidental, or consequential damages</li>
@@ -135,7 +135,7 @@ export default function TermsPage() {
           <section>
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">Indemnification</h2>
             <p className="text-gray-700 leading-relaxed">
-              You agree to indemnify and hold harmless YourCareAI from any claims, damages, or expenses arising from your use of our service, violation of these terms, or infringement of any rights of another party.
+              You agree to indemnify and hold harmless YourCareAI and Digitbite Limited from any claims, damages, or expenses arising from your use of our service, violation of these terms, or infringement of any rights of another party.
             </p>
           </section>
 
@@ -168,8 +168,8 @@ export default function TermsPage() {
             <div className="bg-gray-50 p-4 rounded-lg">
               <p className="text-gray-700">
                 <strong>Email:</strong> legal@yourcareai.com<br />
-                <strong>Address:</strong> YourCareAI Legal Team<br />
-                Suite A 82 James Carter Road<br />
+                <strong>Company:</strong> Digitbite Limited<br />
+                <strong>Address:</strong> Suite A 82 James Carter Road<br />
                 Mildenhall, Bury St. Edmunds, England, IP28 7DE
               </p>
             </div>
