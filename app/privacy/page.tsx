@@ -2,6 +2,24 @@ import { Shield, ArrowLeft } from "lucide-react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Privacy Policy - YourCareAI | HIPAA Compliant Health Data Protection",
+  description: "YourCareAI's comprehensive privacy policy. Learn how we protect your health data with enterprise-grade encryption and HIPAA compliance. Your privacy is our priority.",
+  openGraph: {
+    title: "Privacy Policy - YourCareAI",
+    description: "Learn how YourCareAI protects your health data with enterprise-grade security and HIPAA compliance.",
+  },
+  twitter: {
+    title: "Privacy Policy - YourCareAI",
+    description: "Learn how YourCareAI protects your health data with enterprise-grade security and HIPAA compliance.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+}
 
 export default function PrivacyPage() {
   return (

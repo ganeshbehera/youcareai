@@ -2,6 +2,24 @@ import { FileText, ArrowLeft } from "lucide-react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Terms of Service - YourCareAI | Legal Terms & Conditions",
+  description: "YourCareAI's terms of service and legal conditions. Understand your rights and responsibilities when using our AI health monitoring platform.",
+  openGraph: {
+    title: "Terms of Service - YourCareAI",
+    description: "YourCareAI's terms of service and legal conditions for our AI health monitoring platform.",
+  },
+  twitter: {
+    title: "Terms of Service - YourCareAI",
+    description: "YourCareAI's terms of service and legal conditions for our AI health monitoring platform.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+}
 
 export default function TermsPage() {
   return (
