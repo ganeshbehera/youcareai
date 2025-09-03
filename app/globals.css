@@ -134,16 +134,55 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    font-size: 17px;
   }
   a,
   button {
-    @apply transition-colors duration-200;
+    @apply transition-all duration-300;
   }
   * {
     @apply border-border outline-ring/50;
   }
   body {
     @apply bg-background text-foreground;
+    font-size: 17px;
+    line-height: 1.7;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+  }
+  
+  /* Improved typography hierarchy */
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+  
+  h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  
+  h3 {
+    font-size: 1.875rem;
+    font-weight: 600;
+  }
+  
+  p {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #4b5563;
+  }
+  
+  /* Modern button styles */
+  button {
+    font-weight: 500;
+    letter-spacing: -0.01em;
   }
 }
 

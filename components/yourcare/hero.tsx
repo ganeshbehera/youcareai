@@ -17,98 +17,94 @@ export function Hero() {
         title={modalConfig.title}
         description={modalConfig.description}
       />
-    <header className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100">
-      {/* Animated background elements */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-blue-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse"></div>
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-purple-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse animation-delay-2000"></div>
-        <div className="absolute top-40 left-40 w-60 h-60 bg-pink-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse animation-delay-4000"></div>
-      </div>
+    <header className="relative min-h-screen flex items-center justify-center overflow-hidden bg-white">
+      {/* Modern gradient background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-gray-50 via-white to-blue-50/30"></div>
+      
+      {/* Subtle geometric pattern */}
+      <div className="absolute inset-0 opacity-[0.02]" style={{
+        backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+      }}></div>
 
-      {/* Floating elements */}
+      {/* Modern floating elements */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-20 left-20 animate-bounce animation-delay-1000">
-          <div className="w-3 h-3 bg-blue-500 rounded-full opacity-60"></div>
-        </div>
-        <div className="absolute top-40 right-32 animate-bounce animation-delay-3000">
-          <div className="w-2 h-2 bg-purple-500 rounded-full opacity-60"></div>
-        </div>
-        <div className="absolute bottom-32 left-32 animate-bounce animation-delay-2000">
-          <div className="w-4 h-4 bg-pink-500 rounded-full opacity-60"></div>
-        </div>
+        <div className="absolute top-1/4 left-1/4 w-1 h-1 bg-blue-400 rounded-full animate-pulse"></div>
+        <div className="absolute top-3/4 right-1/4 w-1 h-1 bg-purple-400 rounded-full animate-pulse animation-delay-2000"></div>
+        <div className="absolute top-1/2 right-1/3 w-1 h-1 bg-indigo-400 rounded-full animate-pulse animation-delay-1000"></div>
       </div>
 
       <div className="relative z-10 mx-auto max-w-6xl px-4 py-16 md:py-24 text-center">
         <div className="flex flex-col gap-6 md:gap-8 items-center">
           {/* Logo */}
-          <div className="animate-fade-in mb-4">
+          <div className="animate-fade-in mb-6">
             <Image
               src="/yourcareailogo.png"
               alt="YourCareAI Logo"
-              width={200}
-              height={80}
+              width={240}
+              height={96}
               className="mx-auto"
               priority
             />
           </div>
 
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full border border-blue-200 shadow-sm animate-fade-in animation-delay-500">
-            <Sparkles className="w-4 h-4 text-blue-600" />
-            <span className="text-sm font-medium text-blue-700">Coming Soon • Join the Waitlist</span>
+          <div className="inline-flex items-center gap-2 px-6 py-3 bg-white shadow-lg rounded-full border border-gray-100 animate-fade-in animation-delay-300">
+            <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+            <span className="text-gray-700 font-medium">Early Access Available</span>
           </div>
 
           {/* Main headline */}
           <h1
             id="hero-title"
-            className="text-5xl md:text-7xl font-bold leading-tight bg-gradient-to-r from-gray-900 via-blue-900 to-purple-900 bg-clip-text text-transparent animate-fade-in-up animation-delay-500"
+            className="text-4xl md:text-6xl lg:text-7xl font-black leading-[1.1] text-gray-900 animate-fade-in-up animation-delay-500 max-w-5xl"
           >
-            Prevent Disease
+            AI Health Monitoring
             <br />
-            <span className="text-blue-600">Before It Happens</span>
+            <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent">
+              That Actually Works
+            </span>
           </h1>
 
           {/* Subtitle */}
-          <p className="text-xl md:text-2xl leading-relaxed max-w-3xl text-gray-600 animate-fade-in-up animation-delay-1000">
-            AI-powered health monitoring that predicts risks 
-            <span className="font-semibold text-blue-600"> 6 months early</span> and reduces chronic disease costs by 
-            <span className="font-semibold text-green-600"> 40%</span>
+          <p className="text-lg md:text-xl leading-relaxed max-w-3xl text-gray-600 animate-fade-in-up animation-delay-700 font-medium">
+            Predict health risks <strong className="text-gray-900">6 months early</strong> with 94% accuracy. 
+            Join thousands who are already preventing disease before it happens.
           </p>
 
           {/* Stats */}
-          <div className="flex flex-wrap justify-center gap-8 md:gap-12 mt-4 animate-fade-in-up animation-delay-1500">
+          <div className="grid grid-cols-3 gap-8 md:gap-16 mt-8 animate-fade-in-up animation-delay-900">
             <div className="text-center">
-              <div className="text-3xl font-bold text-blue-600">10,000+</div>
-              <div className="text-sm text-gray-600">Users on Waitlist</div>
+              <div className="text-2xl md:text-4xl font-black text-gray-900 mb-1">10K+</div>
+              <div className="text-gray-600 font-medium">Early Users</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-green-600">94%</div>
-              <div className="text-sm text-gray-600">Prediction Accuracy</div>
+              <div className="text-2xl md:text-4xl font-black text-gray-900 mb-1">94%</div>
+              <div className="text-gray-600 font-medium">Accuracy</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-purple-600">6 months</div>
-              <div className="text-sm text-gray-600">Early Detection</div>
+              <div className="text-2xl md:text-4xl font-black text-gray-900 mb-1">6mo</div>
+              <div className="text-gray-600 font-medium">Early Warning</div>
             </div>
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 mt-8 animate-fade-in-up animation-delay-2000">
+          <div className="flex flex-col sm:flex-row gap-4 mt-12 animate-fade-in-up animation-delay-1100">
             <Button 
               size="lg" 
-              onClick={() => openModal("Join the Waitlist", "Be among the first 10,000 users to get early access and 6 months free when we launch.")}
-              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+              onClick={() => openModal("Get Early Access", "Join thousands who are already using AI to prevent disease before it happens.")}
+              className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-10 py-4 text-lg font-semibold rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-[1.02] border-0"
             >
-              Join Waitlist
+              Get Early Access
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
             <Button
               variant="outline"
               size="lg"
-              onClick={() => openModal("Watch Demo", "Get early access to see YourCareAI in action. Join our waitlist for exclusive demo access.")}
-              className="border-2 border-gray-300 hover:border-blue-500 bg-white/80 backdrop-blur-sm text-gray-700 hover:text-blue-600 px-8 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+              onClick={() => openModal("See How It Works", "Discover how our AI predicts health risks months before symptoms appear.")}
+              className="border-2 border-gray-200 hover:border-gray-300 bg-white text-gray-900 hover:text-gray-900 px-10 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02]"
             >
               <Play className="mr-2 w-5 h-5" />
-              Watch Demo
+              See How It Works
             </Button>
           </div>
 

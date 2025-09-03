@@ -60,30 +60,25 @@ export function Solution() {
         title={modalConfig.title}
         description={modalConfig.description}
       />
-    <section id="solution" className="relative py-16 md:py-24 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
-      {/* Background decoration */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-20 right-10 w-32 h-32 bg-blue-500 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 left-10 w-40 h-40 bg-green-500 rounded-full blur-3xl"></div>
-      </div>
-
-      <div className="relative mx-auto max-w-6xl px-4">
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-green-100 rounded-full mb-6 animate-fade-in">
+    <section id="solution" className="relative py-20 md:py-32 bg-gradient-to-b from-gray-50 to-white">
+      <div className="mx-auto max-w-6xl px-4">
+        <div className="text-center mb-20">
+          <div className="inline-flex items-center gap-2 px-5 py-2 bg-green-50 rounded-full mb-8 animate-fade-in">
             <CheckCircle className="w-4 h-4 text-green-600" />
-            <span className="text-sm font-medium text-green-700">The Solution</span>
+            <span className="text-green-800 font-semibold">Our Solution</span>
           </div>
           
-          <h2 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in-up animation-delay-500">
-            <span className="text-gray-900">The</span>{" "}
+          <h2 className="text-3xl md:text-5xl font-black mb-8 animate-fade-in-up animation-delay-300 max-w-4xl mx-auto leading-tight">
+            AI That Predicts
+            <br />
             <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              YourCareAI
-            </span>{" "}
-            <span className="text-gray-900">Advantage</span>
+              Before You Feel Anything
+            </span>
           </h2>
           
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto animate-fade-in-up animation-delay-1000">
-            Proven results from our pilot with <strong>5,000+ patients</strong> across <strong>12 health systems</strong>
+          <p className="text-lg md:text-xl text-gray-600 max-w-4xl mx-auto animate-fade-in-up animation-delay-500 leading-relaxed font-medium">
+            Our AI analyzes patterns in your health data that humans miss. 
+            <strong className="text-gray-900"> Get 6-month early warnings</strong> with 94% accuracy.
           </p>
         </div>
 
