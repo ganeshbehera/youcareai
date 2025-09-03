@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { Heart } from "lucide-react"
+import Image from "next/image"
 
 export function SiteFooter() {
   return (
@@ -7,9 +8,14 @@ export function SiteFooter() {
       <div className="mx-auto max-w-6xl px-4 py-12">
         {/* Main Footer Content */}
         <div className="flex flex-col md:flex-row justify-between items-center mb-8">
-          <div className="flex items-center gap-2 mb-4 md:mb-0">
-            <Heart className="w-6 h-6 text-blue-400" />
-            <span className="text-xl font-bold">YourCareAI</span>
+          <div className="flex items-center gap-3 mb-4 md:mb-0">
+            <Image
+              src="/yourcareailogo.png"
+              alt="YourCareAI Logo"
+              width={120}
+              height={48}
+              className="h-8 w-auto"
+            />
           </div>
           
           <nav className="flex flex-wrap gap-6 text-sm">

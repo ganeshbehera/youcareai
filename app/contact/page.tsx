@@ -8,6 +8,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { useState } from "react"
+import Image from "next/image"
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -61,9 +62,18 @@ export default function ContactPage() {
               Back to Home
             </Button>
           </Link>
-          <div className="flex items-center gap-3">
-            <Mail className="w-8 h-8 text-blue-600" />
-            <h1 className="text-3xl font-bold text-gray-900">Contact Us</h1>
+          <div className="flex items-center gap-4">
+            <Image
+              src="/yourcareailogo.png"
+              alt="YourCareAI Logo"
+              width={120}
+              height={48}
+              className="h-10 w-auto"
+            />
+            <div className="flex items-center gap-3">
+              <Mail className="w-8 h-8 text-blue-600" />
+              <h1 className="text-3xl font-bold text-gray-900">Contact Us</h1>
+            </div>
           </div>
           <p className="text-gray-600 mt-2">Get in touch with the YourCareAI team</p>
         </div>

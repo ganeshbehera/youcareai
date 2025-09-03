@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { ArrowRight, Play, Sparkles } from "lucide-react"
 import { WaitlistModal } from "./waitlist-modal"
 import { useWaitlistModal } from "@/hooks/use-waitlist-modal"
+import Image from "next/image"
 
 export function Hero() {
   const { isOpen, openModal, closeModal, modalConfig } = useWaitlistModal()
@@ -39,8 +40,20 @@ export function Hero() {
 
       <div className="relative z-10 mx-auto max-w-6xl px-4 py-16 md:py-24 text-center">
         <div className="flex flex-col gap-6 md:gap-8 items-center">
+          {/* Logo */}
+          <div className="animate-fade-in mb-4">
+            <Image
+              src="/yourcareailogo.png"
+              alt="YourCareAI Logo"
+              width={200}
+              height={80}
+              className="mx-auto"
+              priority
+            />
+          </div>
+
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full border border-blue-200 shadow-sm animate-fade-in">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full border border-blue-200 shadow-sm animate-fade-in animation-delay-500">
             <Sparkles className="w-4 h-4 text-blue-600" />
             <span className="text-sm font-medium text-blue-700">Coming Soon • Join the Waitlist</span>
           </div>

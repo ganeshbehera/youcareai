@@ -1,6 +1,7 @@
 import { Shield, ArrowLeft } from "lucide-react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
 
 export default function PrivacyPage() {
   return (
@@ -14,9 +15,18 @@ export default function PrivacyPage() {
               Back to Home
             </Button>
           </Link>
-          <div className="flex items-center gap-3">
-            <Shield className="w-8 h-8 text-blue-600" />
-            <h1 className="text-3xl font-bold text-gray-900">Privacy Policy</h1>
+          <div className="flex items-center gap-4">
+            <Image
+              src="/yourcareailogo.png"
+              alt="YourCareAI Logo"
+              width={120}
+              height={48}
+              className="h-10 w-auto"
+            />
+            <div className="flex items-center gap-3">
+              <Shield className="w-8 h-8 text-blue-600" />
+              <h1 className="text-3xl font-bold text-gray-900">Privacy Policy</h1>
+            </div>
           </div>
           <p className="text-gray-600 mt-2">Last updated: January 2025</p>
         </div>
