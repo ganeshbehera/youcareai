@@ -17,21 +17,48 @@ export function Hero() {
         title={modalConfig.title}
         description={modalConfig.description}
       />
-    <header className="relative min-h-screen flex items-center justify-center overflow-hidden bg-white">
-      {/* Modern gradient background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-gray-50 via-white to-blue-50/30"></div>
+    <header className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-50 via-white to-blue-50/20">
+      {/* Animated gradient background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-50/30 via-purple-50/20 to-indigo-50/30"></div>
       
-      {/* Subtle geometric pattern */}
-      <div className="absolute inset-0 opacity-[0.02]" style={{
-        backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-      }}></div>
-
-      {/* Modern floating elements */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/4 left-1/4 w-1 h-1 bg-blue-400 rounded-full animate-pulse"></div>
-        <div className="absolute top-3/4 right-1/4 w-1 h-1 bg-purple-400 rounded-full animate-pulse animation-delay-2000"></div>
-        <div className="absolute top-1/2 right-1/3 w-1 h-1 bg-indigo-400 rounded-full animate-pulse animation-delay-1000"></div>
+      {/* Floating geometric shapes */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        {/* Large floating circles */}
+        <div className="absolute top-20 left-20 w-32 h-32 bg-gradient-to-br from-blue-200/20 to-purple-200/20 rounded-full animate-float-slow"></div>
+        <div className="absolute top-40 right-32 w-24 h-24 bg-gradient-to-br from-purple-200/20 to-indigo-200/20 rounded-full animate-float-reverse animation-delay-1000"></div>
+        <div className="absolute bottom-32 left-40 w-40 h-40 bg-gradient-to-br from-indigo-200/15 to-blue-200/15 rounded-full animate-drift animation-delay-2000"></div>
+        <div className="absolute bottom-20 right-20 w-28 h-28 bg-gradient-to-br from-cyan-200/20 to-blue-200/20 rounded-full animate-float-slow animation-delay-3000"></div>
+        
+        {/* Medium floating elements */}
+        <div className="absolute top-1/3 left-1/2 w-16 h-16 bg-gradient-to-br from-violet-200/25 to-purple-200/25 rounded-full animate-float animation-delay-1500"></div>
+        <div className="absolute top-2/3 right-1/3 w-20 h-20 bg-gradient-to-br from-pink-200/20 to-rose-200/20 rounded-full animate-drift animation-delay-4000"></div>
+        
+        {/* Small pulsing dots */}
+        <div className="absolute top-1/4 left-3/4 w-3 h-3 bg-blue-400/60 rounded-full animate-pulse-soft"></div>
+        <div className="absolute top-3/4 left-1/4 w-2 h-2 bg-purple-400/60 rounded-full animate-pulse-soft animation-delay-2000"></div>
+        <div className="absolute top-1/2 left-1/6 w-4 h-4 bg-indigo-400/50 rounded-full animate-pulse-soft animation-delay-1000"></div>
+        <div className="absolute top-1/6 right-1/4 w-2 h-2 bg-cyan-400/60 rounded-full animate-pulse-soft animation-delay-3000"></div>
+        <div className="absolute bottom-1/4 right-1/6 w-3 h-3 bg-violet-400/50 rounded-full animate-pulse-soft animation-delay-4000"></div>
+        
+        {/* Rotating subtle shapes */}
+        <div className="absolute top-1/3 right-1/4 w-12 h-12 border border-blue-300/20 rounded-lg animate-rotate-slow"></div>
+        <div className="absolute bottom-1/3 left-1/3 w-8 h-8 border border-purple-300/20 rounded-full animate-rotate-slow animation-delay-2000"></div>
+        
+        {/* Floating plus signs */}
+        <div className="absolute top-1/5 left-1/5 text-blue-300/30 animate-float-reverse animation-delay-1000">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+            <path d="M8 0v16M0 8h16" stroke="currentColor" strokeWidth="2"/>
+          </svg>
+        </div>
+        <div className="absolute bottom-1/5 right-1/3 text-purple-300/30 animate-float animation-delay-3000">
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor">
+            <path d="M6 0v12M0 6h12" stroke="currentColor" strokeWidth="2"/>
+          </svg>
+        </div>
       </div>
+
+      {/* Subtle gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-t from-white/10 via-transparent to-white/5"></div>
 
       <div className="relative z-10 mx-auto max-w-6xl px-4 py-16 md:py-24 text-center">
         <div className="flex flex-col gap-6 md:gap-8 items-center">
