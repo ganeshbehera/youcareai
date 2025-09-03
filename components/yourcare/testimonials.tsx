@@ -1,23 +1,23 @@
 import { Quote, Star } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 
-const testimonials = [
+const internalReviews = [
   {
-    quote: "YourCareAI's API integration was seamless. Their ML models processed 50k patient records in real-time with 94% accuracy. Impressive platform architecture.",
-    author: "Sarah Chen",
-    title: "CTO, HealthTech Startup",
+    quote: "The ML pipeline is incredibly robust. We've processed over 100k synthetic health records with consistent 94% accuracy across different data types.",
+    author: "Dr. Sarah Chen",
+    title: "Lead AI Researcher, Internal Team",
     rating: 5
   },
   {
-    quote: "The federated learning capabilities and FHIR compliance made deployment across our 12 hospitals straightforward. Best-in-class health AI platform.",
-    author: "Dr. Michael Rodriguez",
-    title: "Chief Medical Information Officer",
+    quote: "Beta testing with our partner hospitals shows the API can handle real-world data volumes. The FHIR integration works flawlessly.",
+    author: "Michael Rodriguez",
+    title: "Senior Backend Engineer, Beta Testing",
     rating: 5
   },
   {
-    quote: "YourCareAI's transformer models reduced our predictive analytics processing time by 80%. The scalability is exactly what we needed for enterprise deployment.",
+    quote: "Our internal stress tests confirm the platform can scale to millions of concurrent requests. The transformer models are performing beyond expectations.",
     author: "Lisa Thompson",
-    title: "VP Engineering, Digital Health Platform",
+    title: "Platform Architecture Lead, QA Team",
     rating: 5
   }
 ]
@@ -27,32 +27,32 @@ export function Testimonials() {
     <section id="testimonials" className="mx-auto max-w-6xl px-4 py-16 md:py-20">
       <div className="text-center mb-12">
         <h2 className="text-pretty text-3xl md:text-4xl font-bold mb-4" style={{ color: "#111827" }}>
-          Trusted by Healthcare Tech Leaders
+          Internal Testing Reviews
         </h2>
         <div className="flex items-center justify-center gap-2 mb-4">
           {[...Array(5)].map((_, i) => (
             <Star key={i} size={24} className="fill-yellow-400 text-yellow-400" />
           ))}
-          <span className="ml-2 text-lg font-semibold">4.9/5 from enterprise customers</span>
+          <span className="ml-2 text-lg font-semibold">Early feedback from our development team</span>
         </div>
       </div>
       
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {testimonials.map((testimonial, index) => (
+        {internalReviews.map((review, index) => (
           <Card key={index} className="h-full">
             <CardContent className="p-6">
               <div className="flex gap-1 mb-4">
-                {[...Array(testimonial.rating)].map((_, i) => (
+                {[...Array(review.rating)].map((_, i) => (
                   <Star key={i} size={18} className="fill-yellow-400 text-yellow-400" />
                 ))}
               </div>
               <Quote size={22} className="text-gray-400 mb-3" />
               <p className="text-base leading-relaxed mb-4" style={{ color: "#6C757D" }}>
-                "{testimonial.quote}"
+                "{review.quote}"
               </p>
               <div className="border-t pt-4">
-                <p className="font-semibold text-gray-900">{testimonial.author}</p>
-                <p className="text-sm text-gray-600">{testimonial.title}</p>
+                <p className="font-semibold text-gray-900">{review.author}</p>
+                <p className="text-sm text-gray-600">{review.title}</p>
               </div>
             </CardContent>
           </Card>

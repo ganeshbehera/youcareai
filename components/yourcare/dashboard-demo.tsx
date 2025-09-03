@@ -23,7 +23,7 @@ export function DashboardDemo() {
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 rounded-full mb-6 animate-fade-in">
             <Activity className="w-5 h-5 text-blue-600" />
-            <span className="text-sm font-medium text-blue-700">AI Platform Demo</span>
+            <span className="text-sm font-medium text-blue-700">Platform Preview • Coming Q2 2025</span>
           </div>
           
           <h2 className="text-4xl md:text-5xl font-bold mb-6 animate-fade-in-up animation-delay-500">
@@ -33,7 +33,7 @@ export function DashboardDemo() {
           </h2>
           
           <p className="text-xl text-gray-600 max-w-3xl mx-auto animate-fade-in-up animation-delay-1000">
-            Enterprise-grade AI platform processing 500+ biomarkers in real-time with transformer models and deep learning
+            Preview of our enterprise-grade AI platform that will process 500+ biomarkers in real-time with transformer models and deep learning
           </p>
         </div>
 
@@ -43,12 +43,12 @@ export function DashboardDemo() {
           <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-6">
             <div className="flex items-center justify-between">
               <div>
-                <h3 className="text-xl font-semibold">AI Health Intelligence Platform</h3>
-                <p className="text-blue-100">Real-time ML processing • 500+ biomarkers analyzed</p>
+                <h3 className="text-xl font-semibold">AI Health Intelligence Platform (Preview)</h3>
+                <p className="text-blue-100">Development build • Internal testing phase</p>
               </div>
-              <Badge className="bg-green-500 text-white">
+              <Badge className="bg-orange-500 text-white">
                 <CheckCircle className="w-5 h-5 mr-1" />
-                94% Accuracy
+                Beta Testing
               </Badge>
             </div>
           </div>
