@@ -67,9 +67,10 @@ export function Hero() {
             <Image
               src="/yourcareailogo.png"
               alt="YourCareAI Logo"
-              width={240}
-              height={96}
-              className="mx-auto w-48 h-auto md:w-60 lg:w-auto"
+              width={250}
+              height={100}
+              className="mx-auto h-auto"
+              style={{ width: "250px" }}
               priority
             />
           </div>
