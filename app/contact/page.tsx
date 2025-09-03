@@ -208,30 +208,7 @@ export default function ContactPage() {
               </CardContent>
             </Card>
 
-            {/* FAQ */}
-            <Card>
-              <CardHeader>
-                <CardTitle>Frequently Asked Questions</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <div>
-                  <h4 className="font-medium text-gray-900 mb-1">When will YourCareAI be available?</h4>
-                  <p className="text-sm text-gray-600">We're currently in development. Join our waitlist for early access updates.</p>
-                </div>
-                <div>
-                  <h4 className="font-medium text-gray-900 mb-1">Is my health data secure?</h4>
-                  <p className="text-sm text-gray-600">Yes, we use enterprise-grade encryption and are HIPAA compliant.</p>
-                </div>
-                <div>
-                  <h4 className="font-medium text-gray-900 mb-1">Can I integrate with my existing devices?</h4>
-                  <p className="text-sm text-gray-600">We support 50+ health devices and apps including Apple Health, Fitbit, and more.</p>
-                </div>
-                <div>
-                  <h4 className="font-medium text-gray-900 mb-1">Do you work with healthcare providers?</h4>
-                  <p className="text-sm text-gray-600">Yes, we partner with hospitals, clinics, and insurance companies.</p>
-                </div>
-              </CardContent>
-            </Card>
+
 
             {/* Support Types */}
             <Card>
