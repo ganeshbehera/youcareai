@@ -39,16 +39,16 @@ export function FinalCTA() {
           </div>
 
           <h2 className="text-4xl md:text-6xl font-bold mb-6 text-white">
-            Be Among the First
+            Early Access to
             <br />
             <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-              10,000 Users
+              Enterprise AI Platform
             </span>
           </h2>
 
           <p className="text-xl md:text-2xl text-blue-100 mb-12 max-w-3xl mx-auto">
-            Join our exclusive waitlist and get <strong className="text-white">6 months free</strong> when we launch. 
-            Plus early access to our revolutionary AI health platform.
+            Request developer access to our <strong className="text-white">health intelligence APIs</strong>. 
+            Join leading healthcare organizations building with YourCareAI.
           </p>
         </div>
 
@@ -56,10 +56,10 @@ export function FinalCTA() {
         <div className="animate-fade-in-up animation-delay-1000">
           <Button 
             size="lg"
-            onClick={() => openModal("Be Among the First 10,000", "Join our exclusive waitlist and get 6 months free when we launch. Plus early access to our revolutionary AI health platform.")}
+            onClick={() => openModal("Request Developer Access", "Get early access to our enterprise health intelligence APIs. Join leading healthcare organizations building with YourCareAI platform.")}
             className="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white px-12 py-6 text-xl font-bold rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:scale-110 mb-12"
           >
-            Join Waitlist Now
+            Request API Access
             <ArrowRight className="ml-3 w-6 h-6" />
           </Button>
         </div>
@@ -69,18 +69,18 @@ export function FinalCTA() {
           {[
             {
               icon: Shield,
-              title: "6 Months Free",
-              description: "Full access when we launch"
+              title: "Enterprise SLA",
+              description: "99.9% uptime guarantee"
             },
             {
               icon: Users,
-              title: "Exclusive Access",
-              description: "Be among the first 10,000 users"
+              title: "Developer Support",
+              description: "Dedicated technical team"
             },
             {
               icon: Mail,
-              title: "Early Updates",
-              description: "Get product updates & health tips"
+              title: "API Documentation",
+              description: "Comprehensive integration guides"
             }
           ].map((benefit, index) => (
             <div key={index} className="text-center">

@@ -77,7 +77,7 @@ export function Hero() {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-6 py-3 bg-white shadow-lg rounded-full border border-gray-100 animate-fade-in animation-delay-300">
             <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-            <span className="text-gray-700 font-medium">Early Access Available</span>
+            <span className="text-gray-700 font-medium">AI Platform • Beta Access</span>
           </div>
 
           {/* Main headline */}
@@ -85,32 +85,32 @@ export function Hero() {
             id="hero-title"
             className="text-4xl md:text-6xl lg:text-7xl font-black leading-[1.1] text-gray-900 animate-fade-in-up animation-delay-500 max-w-5xl"
           >
-            AI Health Monitoring
+            AI-Powered Health
             <br />
             <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent">
-              That Actually Works
+              Intelligence Platform
             </span>
           </h1>
 
           {/* Subtitle */}
           <p className="text-lg md:text-xl leading-relaxed max-w-3xl text-gray-600 animate-fade-in-up animation-delay-700 font-medium">
-            Predict health risks <strong className="text-gray-900">6 months early</strong> with 94% accuracy. 
-            Join thousands who are already preventing disease before it happens.
+            Advanced machine learning algorithms analyze 500+ biomarkers to predict health risks <strong className="text-gray-900">6 months early</strong> with 94% accuracy. 
+            Enterprise-grade SaaS platform trusted by healthcare organizations.
           </p>
 
           {/* Stats */}
           <div className="grid grid-cols-3 gap-8 md:gap-16 mt-8 animate-fade-in-up animation-delay-900">
             <div className="text-center">
-              <div className="text-2xl md:text-4xl font-black text-gray-900 mb-1">10K+</div>
-              <div className="text-gray-600 font-medium">Early Users</div>
+              <div className="text-2xl md:text-4xl font-black text-gray-900 mb-1">500+</div>
+              <div className="text-gray-600 font-medium">Biomarkers</div>
             </div>
             <div className="text-center">
               <div className="text-2xl md:text-4xl font-black text-gray-900 mb-1">94%</div>
-              <div className="text-gray-600 font-medium">Accuracy</div>
+              <div className="text-gray-600 font-medium">ML Accuracy</div>
             </div>
             <div className="text-center">
-              <div className="text-2xl md:text-4xl font-black text-gray-900 mb-1">6mo</div>
-              <div className="text-gray-600 font-medium">Early Warning</div>
+              <div className="text-2xl md:text-4xl font-black text-gray-900 mb-1">24/7</div>
+              <div className="text-gray-600 font-medium">AI Monitoring</div>
             </div>
           </div>
 
@@ -118,20 +118,20 @@ export function Hero() {
           <div className="flex flex-col sm:flex-row gap-4 mt-12 animate-fade-in-up animation-delay-1100">
             <Button 
               size="lg" 
-              onClick={() => openModal("Get Early Access", "Join thousands who are already using AI to prevent disease before it happens.")}
+              onClick={() => openModal("Request Platform Demo", "Get exclusive access to our AI health intelligence platform and see how it transforms healthcare data into predictive insights.")}
               className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-10 py-4 text-lg font-semibold rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-[1.02] border-0"
             >
-              Get Early Access
+              Request Demo
               <ArrowRight className="ml-2 w-6 h-6" />
             </Button>
             <Button
               variant="outline"
               size="lg"
-              onClick={() => openModal("See How It Works", "Discover how our AI predicts health risks months before symptoms appear.")}
+              onClick={() => openModal("View API Documentation", "Explore our comprehensive API documentation and integration guides for developers and healthcare organizations.")}
               className="border-2 border-gray-200 hover:border-gray-300 bg-white text-gray-900 hover:text-gray-900 px-10 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02]"
             >
               <Play className="mr-2 w-6 h-6" />
-              See How It Works
+              View API Docs
             </Button>
           </div>
 

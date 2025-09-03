@@ -8,41 +8,41 @@ import { useWaitlistModal } from "@/hooks/use-waitlist-modal"
 
 const features = [
   {
-    title: "6-Month Early Detection",
+    title: "Multi-Modal AI Processing",
     Icon: BrainCircuit,
-    desc: "AI predicts diabetes, heart disease, and stroke risk 6 months before symptoms appear. 94% accuracy rate.",
-    metric: "94%",
-    metricLabel: "accuracy",
+    desc: "Transformer models analyze genomics, wearables, EHR, and imaging data simultaneously. 94% predictive accuracy.",
+    metric: "500+",
+    metricLabel: "biomarkers",
     color: "from-blue-500 to-blue-600",
     bgColor: "bg-blue-50",
     iconColor: "text-blue-600"
   },
   {
-    title: "40% Cost Reduction",
+    title: "Enterprise API Integration",
     Icon: ClipboardCheck,
-    desc: "Personalized prevention plans reduce healthcare costs by an average of 40% per patient annually.",
-    metric: "40%",
-    metricLabel: "savings",
+    desc: "RESTful APIs with OAuth 2.0, FHIR compliance, and real-time webhooks. Deploy in minutes, not months.",
+    metric: "99.9%",
+    metricLabel: "uptime SLA",
     color: "from-green-500 to-green-600",
     bgColor: "bg-green-50",
     iconColor: "text-green-600"
   },
   {
-    title: "3x Better Adherence",
+    title: "Scalable Cloud Infrastructure",
     Icon: BellRing,
-    desc: "Smart reminders and behavioral nudges increase care plan adherence from 40% to 85%.",
-    metric: "85%",
-    metricLabel: "adherence",
+    desc: "Auto-scaling Kubernetes clusters process millions of data points per second with sub-100ms latency.",
+    metric: "<100ms",
+    metricLabel: "response time",
     color: "from-purple-500 to-purple-600",
     bgColor: "bg-purple-50",
     iconColor: "text-purple-600"
   },
   {
-    title: "Real-Time Monitoring",
+    title: "Advanced ML Pipeline",
     Icon: MonitorSmartphone,
-    desc: "Connect 50+ devices and apps. Instant alerts for your care team when intervention is needed.",
-    metric: "50+",
-    metricLabel: "integrations",
+    desc: "Continuous model training with federated learning, A/B testing, and automated model deployment.",
+    metric: "24/7",
+    metricLabel: "ML monitoring",
     color: "from-orange-500 to-orange-600",
     bgColor: "bg-orange-50",
     iconColor: "text-orange-600"
@@ -65,20 +65,20 @@ export function Solution() {
         <div className="text-center mb-20">
           <div className="inline-flex items-center gap-2 px-5 py-2 bg-green-50 rounded-full mb-8 animate-fade-in">
             <CheckCircle className="w-5 h-5 text-green-600" />
-            <span className="text-green-800 font-semibold">Our Solution</span>
+            <span className="text-green-800 font-semibold">AI Platform</span>
           </div>
           
-          <h2 className="text-3xl md:text-5xl font-black mb-8 animate-fade-in-up animation-delay-300 max-w-4xl mx-auto leading-tight">
-            AI That Predicts
+                    <h2 className="text-3xl md:text-5xl font-black mb-8 animate-fade-in-up animation-delay-300 max-w-4xl mx-auto leading-tight">
+            Enterprise AI Platform
             <br />
             <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              Before You Feel Anything
+              For Health Intelligence
             </span>
           </h2>
-          
+
           <p className="text-lg md:text-xl text-gray-600 max-w-4xl mx-auto animate-fade-in-up animation-delay-500 leading-relaxed font-medium">
-            Our AI analyzes patterns in your health data that humans miss. 
-            <strong className="text-gray-900"> Get 6-month early warnings</strong> with 94% accuracy.
+            Our cloud-native SaaS platform processes 500+ biomarkers using transformer models and deep learning.
+            <strong className="text-gray-900"> Deploy via API in minutes</strong> with 99.9% uptime SLA.
           </p>
         </div>
 
@@ -122,16 +122,16 @@ export function Solution() {
         <div className="text-center animate-fade-in-up animation-delay-3000">
           <div className="inline-flex items-center gap-2 mb-6">
             <Sparkles className="w-5 h-5 text-blue-600 animate-pulse" />
-            <span className="text-lg font-semibold text-gray-700">Ready to transform your health?</span>
+            <span className="text-lg font-semibold text-gray-700">Ready to integrate our AI platform?</span>
             <Sparkles className="w-5 h-5 text-blue-600 animate-pulse" />
           </div>
           
           <Button 
             size="lg" 
-            onClick={() => openModal("Transform Your Health", "Ready to experience AI-powered health monitoring? Join our waitlist for early access.")}
+            onClick={() => openModal("Get Platform Access", "Ready to integrate AI health intelligence into your application? Request developer access to our platform.")}
             className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
           >
-            Join the Waitlist
+            Request API Access
             <CheckCircle className="ml-2 w-5 h-5" />
           </Button>
         </div>

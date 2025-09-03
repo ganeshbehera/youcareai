@@ -23,17 +23,17 @@ export function DashboardDemo() {
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 rounded-full mb-6 animate-fade-in">
             <Activity className="w-5 h-5 text-blue-600" />
-            <span className="text-sm font-medium text-blue-700">Live Demo</span>
+            <span className="text-sm font-medium text-blue-700">AI Platform Demo</span>
           </div>
           
           <h2 className="text-4xl md:text-5xl font-bold mb-6 animate-fade-in-up animation-delay-500">
-            Your Health Dashboard
+            AI Health Intelligence
             <br />
-            <span className="text-blue-600">In Action</span>
+            <span className="text-blue-600">Platform Dashboard</span>
           </h2>
           
           <p className="text-xl text-gray-600 max-w-3xl mx-auto animate-fade-in-up animation-delay-1000">
-            See how YourCareAI transforms complex health data into actionable insights
+            Enterprise-grade AI platform processing 500+ biomarkers in real-time with transformer models and deep learning
           </p>
         </div>
 
@@ -43,12 +43,12 @@ export function DashboardDemo() {
           <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-6">
             <div className="flex items-center justify-between">
               <div>
-                <h3 className="text-xl font-semibold">Sarah Chen's Health Dashboard</h3>
-                <p className="text-blue-100">Last updated: 2 minutes ago</p>
+                <h3 className="text-xl font-semibold">AI Health Intelligence Platform</h3>
+                <p className="text-blue-100">Real-time ML processing • 500+ biomarkers analyzed</p>
               </div>
               <Badge className="bg-green-500 text-white">
                 <CheckCircle className="w-5 h-5 mr-1" />
-                Healthy
+                94% Accuracy
               </Badge>
             </div>
           </div>
@@ -109,16 +109,16 @@ export function DashboardDemo() {
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2 text-orange-600">
                     <AlertTriangle className="w-6 h-6" />
-                    AI Health Alert
+                    ML Model Alert
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-700 mb-3">
-                    Your blood pressure has been trending upward for 3 days. Consider reducing sodium intake.
+                    Transformer model detected anomalous pattern in cardiovascular biomarkers. Confidence: 87%
                   </p>
                   <div className="flex items-center gap-2 text-sm text-gray-600">
                     <TrendingUp className="w-5 h-5 text-orange-500" />
-                    <span>Risk increased by 12%</span>
+                    <span>Risk score: 0.87 (threshold: 0.75)</span>
                   </div>
                 </CardContent>
               </Card>
@@ -127,16 +127,16 @@ export function DashboardDemo() {
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2 text-green-600">
                     <CheckCircle className="w-6 h-6" />
-                    Positive Trend
+                    Model Optimization
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-700 mb-3">
-                    Great job! Your exercise consistency has improved your cardiovascular health by 8%.
+                    Deep learning model retrained with new data. Predictive accuracy improved to 94.3%.
                   </p>
                   <div className="flex items-center gap-2 text-sm text-gray-600">
                     <TrendingDown className="w-5 h-5 text-green-500" />
-                    <span>Risk decreased by 8%</span>
+                    <span>Error rate: -0.3% (improved)</span>
                   </div>
                 </CardContent>
               </Card>
