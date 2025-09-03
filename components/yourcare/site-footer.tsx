@@ -26,9 +26,21 @@ export function SiteFooter() {
         </div>
 
         {/* Bottom Section */}
-        <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
-          <p>© 2025 YourCareAI. Preventing disease with AI.</p>
-          <p className="mt-2 md:mt-0">Built with ❤️ for better health outcomes</p>
+        <div className="border-t border-gray-800 pt-8 space-y-4">
+          <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+            <p>© 2025 YourCareAI. Preventing disease with AI.</p>
+            <p className="mt-2 md:mt-0">Built with ❤️ for better health outcomes</p>
+          </div>
+          
+          {/* Company Details */}
+          <div className="text-center text-xs text-gray-500">
+            <p className="mb-1">
+              <strong className="text-gray-400">DIGITBITE LIMITED</strong> - Registered in England and Wales
+            </p>
+            <p>
+              Suite A 82 James Carter Road, Mildenhall, Bury St. Edmunds, England, IP28 7DE
+            </p>
+          </div>
         </div>
       </div>
     </footer>
