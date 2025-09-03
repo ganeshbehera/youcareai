@@ -22,21 +22,34 @@ const steps = [
 export function HowItWorks() {
   return (
     <section id="how-it-works" className="mx-auto max-w-6xl px-4 py-16 md:py-20">
-      <h2 className="text-pretty text-3xl md:text-4xl font-semibold mb-10" style={{ color: "#111827" }}>
-        How It Works
-      </h2>
+      <div className="text-center mb-16">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-gray-900">
+          How It Works
+        </h2>
+        <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
+          Get started with our AI-powered health intelligence platform in four simple steps
+        </p>
+      </div>
 
-      <ol className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <ol className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
         {steps.map(({ title, Icon }, i) => (
-          <li key={title} className="rounded-xl border bg-card p-5 flex items-start gap-4">
-            <div className="rounded-md p-2 shrink-0" style={{ backgroundColor: "#F8F9FA" }} aria-hidden>
-              <Icon size={24} style={{ color: "#0D6EFD" }} />
+          <li key={title} className="relative rounded-2xl border-2 border-gray-100 bg-white p-6 sm:p-8 flex items-start gap-6 hover:shadow-lg hover:border-blue-200 transition-all duration-300 group">
+            {/* Step Number Badge */}
+            <div className="absolute -top-3 -left-3 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold">
+              {i + 1}
             </div>
-            <div>
-              <p className="text-sm mb-1" style={{ color: "#6C757D" }}>
+            
+            {/* Icon Container */}
+            <div className="rounded-xl p-4 bg-blue-50 group-hover:bg-blue-100 transition-colors duration-300 shrink-0">
+              <Icon size={32} className="text-blue-600 group-hover:text-blue-700 transition-colors duration-300" />
+            </div>
+            
+            {/* Content */}
+            <div className="flex-1">
+              <p className="text-xs sm:text-sm font-medium text-blue-600 mb-2 uppercase tracking-wide">
                 Step {i + 1}
               </p>
-              <h3 className="font-medium" style={{ color: "#111827" }}>
+              <h3 className="text-lg sm:text-xl font-semibold text-gray-900 leading-tight">
                 {title}
               </h3>
             </div>
