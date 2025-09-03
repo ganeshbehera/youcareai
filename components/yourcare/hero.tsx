@@ -122,7 +122,7 @@ export function Hero() {
               className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-10 py-4 text-lg font-semibold rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-[1.02] border-0"
             >
               Get Early Access
-              <ArrowRight className="ml-2 w-5 h-5" />
+              <ArrowRight className="ml-2 w-6 h-6" />
             </Button>
             <Button
               variant="outline"
@@ -130,7 +130,7 @@ export function Hero() {
               onClick={() => openModal("See How It Works", "Discover how our AI predicts health risks months before symptoms appear.")}
               className="border-2 border-gray-200 hover:border-gray-300 bg-white text-gray-900 hover:text-gray-900 px-10 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02]"
             >
-              <Play className="mr-2 w-5 h-5" />
+              <Play className="mr-2 w-6 h-6" />
               See How It Works
             </Button>
           </div>

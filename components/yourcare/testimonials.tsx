@@ -31,7 +31,7 @@ export function Testimonials() {
         </h2>
         <div className="flex items-center justify-center gap-2 mb-4">
           {[...Array(5)].map((_, i) => (
-            <Star key={i} size={20} className="fill-yellow-400 text-yellow-400" />
+            <Star key={i} size={24} className="fill-yellow-400 text-yellow-400" />
           ))}
           <span className="ml-2 text-lg font-semibold">4.9/5 from 10,000+ users</span>
         </div>
@@ -43,10 +43,10 @@ export function Testimonials() {
             <CardContent className="p-6">
               <div className="flex gap-1 mb-4">
                 {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} size={16} className="fill-yellow-400 text-yellow-400" />
+                  <Star key={i} size={18} className="fill-yellow-400 text-yellow-400" />
                 ))}
               </div>
-              <Quote size={18} className="text-gray-400 mb-3" />
+              <Quote size={22} className="text-gray-400 mb-3" />
               <p className="text-base leading-relaxed mb-4" style={{ color: "#6C757D" }}>
                 "{testimonial.quote}"
               </p>

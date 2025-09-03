@@ -22,7 +22,7 @@ export function DashboardDemo() {
       <div className="mx-auto max-w-6xl px-4">
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 rounded-full mb-6 animate-fade-in">
-            <Activity className="w-4 h-4 text-blue-600" />
+            <Activity className="w-5 h-5 text-blue-600" />
             <span className="text-sm font-medium text-blue-700">Live Demo</span>
           </div>
           
@@ -47,7 +47,7 @@ export function DashboardDemo() {
                 <p className="text-blue-100">Last updated: 2 minutes ago</p>
               </div>
               <Badge className="bg-green-500 text-white">
-                <CheckCircle className="w-4 h-4 mr-1" />
+                <CheckCircle className="w-5 h-5 mr-1" />
                 Healthy
               </Badge>
             </div>
@@ -93,7 +93,7 @@ export function DashboardDemo() {
                 <Card key={index} className="border-0 shadow-md hover:shadow-lg transition-shadow">
                   <CardContent className="p-4">
                     <div className={`inline-flex items-center justify-center w-10 h-10 rounded-lg ${metric.bgColor} mb-3`}>
-                      <metric.icon className={`w-5 h-5 ${metric.color}`} />
+                      <metric.icon className={`w-6 h-6 ${metric.color}`} />
                     </div>
                     <div className={`text-2xl font-bold ${metric.color} mb-1`}>{metric.value}</div>
                     <div className="text-sm text-gray-600">{metric.label}</div>
@@ -108,7 +108,7 @@ export function DashboardDemo() {
               <Card className="border-l-4 border-l-orange-500">
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2 text-orange-600">
-                    <AlertTriangle className="w-5 h-5" />
+                    <AlertTriangle className="w-6 h-6" />
                     AI Health Alert
                   </CardTitle>
                 </CardHeader>
@@ -117,7 +117,7 @@ export function DashboardDemo() {
                     Your blood pressure has been trending upward for 3 days. Consider reducing sodium intake.
                   </p>
                   <div className="flex items-center gap-2 text-sm text-gray-600">
-                    <TrendingUp className="w-4 h-4 text-orange-500" />
+                    <TrendingUp className="w-5 h-5 text-orange-500" />
                     <span>Risk increased by 12%</span>
                   </div>
                 </CardContent>
@@ -126,7 +126,7 @@ export function DashboardDemo() {
               <Card className="border-l-4 border-l-green-500">
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2 text-green-600">
-                    <CheckCircle className="w-5 h-5" />
+                    <CheckCircle className="w-6 h-6" />
                     Positive Trend
                   </CardTitle>
                 </CardHeader>
@@ -135,7 +135,7 @@ export function DashboardDemo() {
                     Great job! Your exercise consistency has improved your cardiovascular health by 8%.
                   </p>
                   <div className="flex items-center gap-2 text-sm text-gray-600">
-                    <TrendingDown className="w-4 h-4 text-green-500" />
+                    <TrendingDown className="w-5 h-5 text-green-500" />
                     <span>Risk decreased by 8%</span>
                   </div>
                 </CardContent>
@@ -146,7 +146,7 @@ export function DashboardDemo() {
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
-                  <Calendar className="w-5 h-5 text-blue-600" />
+                  <Calendar className="w-6 h-6 text-blue-600" />
                   Weekly Health Goals
                 </CardTitle>
               </CardHeader>
@@ -174,7 +174,7 @@ export function DashboardDemo() {
             {/* Next Actions */}
             <div className="mt-8 p-4 bg-blue-50 rounded-lg">
               <div className="flex items-center gap-2 mb-3">
-                <Clock className="w-5 h-5 text-blue-600" />
+                <Clock className="w-6 h-6 text-blue-600" />
                 <span className="font-semibold text-blue-900">Recommended Actions</span>
               </div>
               <ul className="space-y-2 text-sm text-blue-800">

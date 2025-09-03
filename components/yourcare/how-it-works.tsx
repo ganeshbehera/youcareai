@@ -30,7 +30,7 @@ export function HowItWorks() {
         {steps.map(({ title, Icon }, i) => (
           <li key={title} className="rounded-xl border bg-card p-5 flex items-start gap-4">
             <div className="rounded-md p-2 shrink-0" style={{ backgroundColor: "#F8F9FA" }} aria-hidden>
-              <Icon size={20} style={{ color: "#0D6EFD" }} />
+              <Icon size={24} style={{ color: "#0D6EFD" }} />
             </div>
             <div>
               <p className="text-sm mb-1" style={{ color: "#6C757D" }}>

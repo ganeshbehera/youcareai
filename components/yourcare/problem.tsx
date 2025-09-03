@@ -9,7 +9,7 @@ export function Problem() {
       <div className="mx-auto max-w-6xl px-4">
         <div className="text-center mb-20">
           <div className="inline-flex items-center gap-2 px-5 py-2 bg-orange-50 rounded-full mb-8 animate-fade-in">
-            <AlertTriangle className="w-4 h-4 text-orange-600" />
+            <AlertTriangle className="w-5 h-5 text-orange-600" />
             <span className="text-orange-800 font-semibold">The Problem</span>
           </div>
           
