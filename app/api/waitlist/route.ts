@@ -7,7 +7,7 @@ apiInstance.setApiKey(brevo.TransactionalEmailsApiApiKeys.apiKey, process.env.BR
 
 export async function POST(request: NextRequest) {
   try {
-    const { name, email, message } = await request.json()
+    const { name, email, phone, message } = await request.json()
 
     // Validate required fields
     if (!name || !email) {
@@ -101,6 +101,7 @@ export async function POST(request: NextRequest) {
       <h2>New Waitlist Signup</h2>
       <p><strong>Name:</strong> ${name}</p>
       <p><strong>Email:</strong> ${email}</p>
+      ${phone ? `<p><strong>Phone:</strong> ${phone}</p>` : ''}
       ${message ? `<p><strong>Message:</strong> ${message}</p>` : ''}
       <p><strong>Timestamp:</strong> ${new Date().toISOString()}</p>
     `
