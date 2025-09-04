@@ -9,25 +9,25 @@ const teamMembers = [
     name: "Riaz Karim",
     role: "Co-Founder & CEO",
     experience: "Software engineer with 6 years experience in healthcare technology. Previously worked on data analytics platforms at mid-size health tech companies. Passionate about using AI to improve healthcare outcomes.",
-    image: "https://i0.wp.com/digitbite.com/wp-content/uploads/2024/05/6.png?w=600&ssl=1"
+    image: "/riaz-karim.png"
   },
   {
     name: "Rajesh Raj",
     role: "Co-Founder & CTO",
     experience: "Full-stack developer with 5 years experience building web applications. Computer Science graduate with focus on machine learning. Previously developed health monitoring systems for startups.",
-    image: "https://i0.wp.com/digitbite.com/wp-content/uploads/2023/08/2.jpeg?w=600&ssl=1"
+    image: "/rajesh-raj.jpeg"
   },
   {
     name: "Ramesh Iyer",
     role: "Product Manager",
     experience: "Product manager with 4 years experience in SaaS platforms. Previously worked at healthcare startups focusing on user experience and product development. MBA in Business Administration.",
-    image: "https://i0.wp.com/digitbite.com/wp-content/uploads/2024/05/4-1.png?w=600&ssl=1"
+    image: "/ramesh-iyer.png"
   },
   {
     name: "Sarah Imbach",
     role: "Clinical Advisor",
     experience: "Registered Nurse with 7 years clinical experience. BSN from nursing school, specialized in patient care and health monitoring. Provides clinical insights for product development.",
-    image: "https://i0.wp.com/digitbite.com/wp-content/uploads/2023/08/61.jpeg?w=600&ssl=1"
+    image: "/sarah-imbach.jpeg"
   }
 ]
 
