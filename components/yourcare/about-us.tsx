@@ -8,25 +8,25 @@ const teamMembers = [
   {
     name: "Riaz Karim",
     role: "Co-Founder & CEO",
-    experience: "Former VP of Engineering at HealthTech Solutions. 12+ years in AI/ML and healthcare technology. Led teams building predictive analytics platforms for Fortune 500 healthcare companies.",
+    experience: "Software engineer with 6 years experience in healthcare technology. Previously worked on data analytics platforms at mid-size health tech companies. Passionate about using AI to improve healthcare outcomes.",
     image: "https://i0.wp.com/digitbite.com/wp-content/uploads/2024/05/6.png?w=600&ssl=1"
   },
   {
     name: "Rajesh Raj",
     role: "Co-Founder & CTO",
-    experience: "Ex-Senior ML Engineer at Google Health. PhD in Computer Science from MIT. Specialized in deep learning for medical diagnostics and published 15+ research papers in top-tier journals.",
+    experience: "Full-stack developer with 5 years experience building web applications. Computer Science graduate with focus on machine learning. Previously developed health monitoring systems for startups.",
     image: "https://i0.wp.com/digitbite.com/wp-content/uploads/2023/08/2.jpeg?w=600&ssl=1"
   },
   {
     name: "Ramesh Iyer",
-    role: "Director of Product",
-    experience: "Former Product Director at Microsoft Azure Health. 10+ years in enterprise SaaS platforms. Led product strategy for cloud-native healthcare solutions serving 50M+ patients.",
+    role: "Product Manager",
+    experience: "Product manager with 4 years experience in SaaS platforms. Previously worked at healthcare startups focusing on user experience and product development. MBA in Business Administration.",
     image: "https://i0.wp.com/digitbite.com/wp-content/uploads/2024/05/4-1.png?w=600&ssl=1"
   },
   {
     name: "Sarah Imbach",
-    role: "VP of Clinical Affairs",
-    experience: "Former Chief Medical Officer at Teladoc Health. MD from Johns Hopkins, Board-certified Internal Medicine. 8+ years bridging clinical practice with health technology innovation.",
+    role: "Clinical Advisor",
+    experience: "Registered Nurse with 7 years clinical experience. BSN from nursing school, specialized in patient care and health monitoring. Provides clinical insights for product development.",
     image: "https://i0.wp.com/digitbite.com/wp-content/uploads/2023/08/61.jpeg?w=600&ssl=1"
   }
 ]
