@@ -1,6 +1,7 @@
 import { Hero } from "@/components/yourcare/hero"
 import { Problem } from "@/components/yourcare/problem"
 import { Solution } from "@/components/yourcare/solution"
+import { AboutUs } from "@/components/yourcare/about-us"
 import { HowItWorks } from "@/components/yourcare/how-it-works"
 import { DashboardDemo } from "@/components/yourcare/dashboard-demo"
 import { Testimonials } from "@/components/yourcare/testimonials"
@@ -13,6 +14,7 @@ export default function Page() {
       <Hero />
       <Problem />
       <Solution />
+      <AboutUs />
       <DashboardDemo />
       <HowItWorks />
       <Testimonials />
