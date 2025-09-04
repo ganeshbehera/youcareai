@@ -34,12 +34,12 @@ const teamMembers = [
 const keyAreas = [
   {
     icon: Target,
-    title: "Business Description",
+    title: "Our Mission",
     content: "YourCareAI is an enterprise AI platform that transforms healthcare data into actionable intelligence. We solve the critical problem of underutilized healthcare data by providing real-time AI monitoring and predictive analytics. Our target audience includes healthcare providers, insurance companies, and enterprise organizations seeking to implement AI-driven health intelligence solutions."
   },
   {
     icon: Code,
-    title: "Products & Development",
+    title: "What We're Building",
     content: "Our flagship AI Health Intelligence Platform is currently in beta testing phase, scheduled for Q2 2026 launch. The platform features multi-modal AI processing, enterprise API integration, and scalable cloud infrastructure capable of analyzing 500+ biomarkers with 94% ML accuracy. We're building the future of preventive healthcare through advanced AI technology."
   }
 ]
