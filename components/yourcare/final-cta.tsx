@@ -47,8 +47,8 @@ export function FinalCTA() {
           </h2>
 
           <p className="text-lg sm:text-xl md:text-2xl text-blue-100 mb-12 max-w-3xl mx-auto px-4">
-            Request developer access to our <strong className="text-white">health intelligence APIs</strong>. 
-            Join leading healthcare organizations building with YourCareAI.
+            Request early access to our <strong className="text-white">health intelligence platform</strong>. 
+            Join leading healthcare organizations transforming care with YourCareAI.
           </p>
         </div>
 
@@ -56,10 +56,10 @@ export function FinalCTA() {
         <div className="animate-fade-in-up animation-delay-1000">
           <Button 
             size="lg"
-            onClick={() => openModal("Request Developer Access", "Get early access to our enterprise health intelligence APIs. Join leading healthcare organizations building with YourCareAI platform.")}
+            onClick={() => openModal("Request Platform Access", "Get early access to our enterprise health intelligence platform. Join leading healthcare organizations transforming care with YourCareAI.")}
             className="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white px-8 sm:px-12 py-4 sm:py-6 text-lg sm:text-xl font-bold rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:scale-110 mb-12 w-full max-w-sm sm:w-auto"
           >
-            Request API Access
+            Request Platform Access
             <ArrowRight className="ml-2 sm:ml-3 w-5 h-5 sm:w-6 sm:h-6" />
           </Button>
         </div>
@@ -74,13 +74,13 @@ export function FinalCTA() {
             },
             {
               icon: Users,
-              title: "Developer Support",
+              title: "Implementation Support",
               description: "Dedicated technical team"
             },
             {
               icon: Mail,
-              title: "API Documentation",
-              description: "Comprehensive integration guides"
+              title: "Platform Training",
+              description: "Comprehensive onboarding support"
             }
           ].map((benefit, index) => (
             <div key={index} className="text-center">

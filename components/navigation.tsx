@@ -15,8 +15,7 @@ const navigation = [
     href: "#",
     submenu: [
       { name: "Features", href: "/features" },
-      { name: "Integrations", href: "/integrations" },
-      { name: "API Docs", href: "/api-docs" }
+      { name: "Integrations", href: "/integrations" }
     ]
   },
   { name: "Customers", href: "/customers" },

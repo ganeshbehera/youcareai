@@ -18,9 +18,9 @@ const features = [
     iconColor: "text-blue-600"
   },
   {
-    title: "Enterprise API Integration",
+    title: "Healthcare System Integration",
     Icon: ClipboardCheck,
-    desc: "RESTful APIs with OAuth 2.0, FHIR compliance, and real-time webhooks. Deploy in minutes, not months.",
+    desc: "Seamless integration with EHR systems, FHIR compliance, and real-time data synchronization. Deploy in minutes, not months.",
     metric: "99.9%",
     metricLabel: "uptime SLA",
     color: "from-green-500 to-green-600",
@@ -78,7 +78,7 @@ export function Solution() {
 
           <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-4xl mx-auto animate-fade-in-up animation-delay-500 leading-relaxed font-medium px-4">
             Our cloud-native SaaS platform processes 500+ biomarkers using transformer models and deep learning.
-            <strong className="text-gray-900"> Deploy via API in minutes</strong> with 99.9% uptime SLA.
+            <strong className="text-gray-900"> Deploy in your organization in minutes</strong> with 99.9% uptime SLA.
           </p>
         </div>
 
@@ -128,10 +128,10 @@ export function Solution() {
           
           <Button 
             size="lg" 
-            onClick={() => openModal("Get Platform Access", "Ready to integrate AI health intelligence into your application? Request developer access to our platform.")}
+            onClick={() => openModal("Get Platform Access", "Ready to transform your healthcare organization with AI intelligence? Request early access to our platform.")}
             className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-6 sm:px-8 py-4 text-base sm:text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-full sm:w-auto"
           >
-            Request API Access
+            Request Platform Access
             <CheckCircle className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
           </Button>
         </div>

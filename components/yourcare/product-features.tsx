@@ -37,10 +37,10 @@ const features = [
   },
   {
     icon: Network,
-    title: "RESTful API Platform",
-    description: "Comprehensive API suite with SDKs for Python, JavaScript, and R. Deploy AI models in production within minutes.",
-    capabilities: ["RESTful & GraphQL APIs", "Webhook integrations", "Rate limiting & auth", "Comprehensive SDKs"],
-    badge: "Developer Tools"
+    title: "Healthcare Integration Hub",
+    description: "Seamless integration with existing healthcare systems and workflows. Connect with EHR systems, medical devices, and health platforms.",
+    capabilities: ["EHR system integration", "Medical device connectivity", "Workflow automation", "Data synchronization"],
+    badge: "Integration"
   },
   {
     icon: Shield,
@@ -139,8 +139,8 @@ export function ProductFeatures() {
                 <div className="text-blue-100 font-medium">Uptime SLA</div>
               </div>
               <div>
-                <div className="text-3xl md:text-4xl font-black mb-2">&lt;100ms</div>
-                <div className="text-blue-100 font-medium">API Response</div>
+                <div className="text-3xl md:text-4xl font-black mb-2">94%</div>
+                <div className="text-blue-100 font-medium">AI Accuracy</div>
               </div>
               <div>
                 <div className="text-3xl md:text-4xl font-black mb-2">10PB+</div>

@@ -7,12 +7,10 @@ import {
   Smartphone, 
   Cloud, 
   Database, 
-  Webhook, 
   Code, 
   Puzzle,
   ArrowRight,
   CheckCircle,
-  Zap,
   Globe
 } from "lucide-react"
 import { WaitlistModal } from "./waitlist-modal"
@@ -62,47 +60,21 @@ const integrationCategories = [
     badge: "Multi-Cloud"
   },
   {
-    title: "Developer Tools",
-    description: "Comprehensive APIs, SDKs, and webhooks for custom integrations",
+    title: "Data Export & Reporting",
+    description: "Comprehensive reporting and data export capabilities for analysis",
     icon: Code,
     integrations: [
-      "RESTful APIs",
-      "GraphQL Endpoints",
-      "Python SDK",
-      "JavaScript/Node.js SDK",
-      "R Statistical Package",
-      "Webhook Notifications"
+      "Custom Report Generation",
+      "Data Export (CSV, JSON, PDF)",
+      "Automated Reporting",
+      "Dashboard Embedding",
+      "Real-time Notifications",
+      "Scheduled Reports"
     ],
-    badge: "API-First"
+    badge: "Reporting"
   }
 ]
 
-const apiEndpoints = [
-  {
-    method: "POST",
-    endpoint: "/api/v1/analyze",
-    description: "Submit health data for AI analysis",
-    response: "Real-time risk assessment"
-  },
-  {
-    method: "GET",
-    endpoint: "/api/v1/insights/{id}",
-    description: "Retrieve patient insights and predictions",
-    response: "Structured health insights"
-  },
-  {
-    method: "POST",
-    endpoint: "/api/v1/webhooks",
-    description: "Configure real-time notifications",
-    response: "Webhook configuration"
-  },
-  {
-    method: "GET",
-    endpoint: "/api/v1/biomarkers",
-    description: "List supported biomarkers and metrics",
-    response: "Biomarker catalog"
-  }
-]
 
 export function Integrations() {
   const { isOpen, openModal, closeModal, modalConfig } = useWaitlistModal()
@@ -169,59 +141,34 @@ export function Integrations() {
             ))}
           </div>
 
-          {/* API Documentation Preview */}
+          {/* Platform Integration */}
           <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-3xl p-8 md:p-12 text-white animate-fade-in-up animation-delay-1100">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div>
-                <div className="flex items-center gap-2 mb-6">
-                  <Webhook className="w-6 h-6 text-green-400" />
-                  <Badge className="bg-green-500/20 text-green-400 border-green-500/30">API v1.0</Badge>
-                </div>
-                <h3 className="text-2xl md:text-3xl font-bold mb-6">Developer-First Platform</h3>
-                <p className="text-gray-300 leading-relaxed mb-8">
-                  RESTful APIs with comprehensive documentation, SDKs for popular languages, 
-                  and webhook support for real-time integrations. Get started in minutes.
-                </p>
-                
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <Button 
-                    onClick={() => openModal("Access API Documentation", "Get developer access to our comprehensive API documentation and integration guides.")}
-                    className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 font-semibold rounded-xl"
-                  >
-                    View API Docs
-                    <ArrowRight className="ml-2 w-5 h-5" />
-                  </Button>
-                  <Button 
-                    variant="outline" 
-                    onClick={() => openModal("Request API Keys", "Apply for developer API keys and start building with our health intelligence platform.")}
-                    className="border-gray-600 text-gray-300 hover:bg-gray-800 px-6 py-3 font-semibold rounded-xl"
-                  >
-                    Get API Keys
-                  </Button>
-                </div>
+            <div className="text-center">
+              <div className="flex items-center justify-center gap-2 mb-6">
+                <Globe className="w-6 h-6 text-green-400" />
+                <Badge className="bg-green-500/20 text-green-400 border-green-500/30">Enterprise Ready</Badge>
               </div>
+              <h3 className="text-2xl md:text-3xl font-bold mb-6">Seamless Healthcare Integration</h3>
+              <p className="text-gray-300 leading-relaxed mb-8 max-w-3xl mx-auto">
+                Our platform integrates seamlessly with your existing healthcare infrastructure. 
+                Connect with EHR systems, medical devices, and health platforms without disrupting your workflow.
+              </p>
               
-              <div className="bg-gray-800/50 rounded-2xl p-6 border border-gray-700">
-                <div className="flex items-center gap-2 mb-4">
-                  <div className="w-3 h-3 bg-red-500 rounded-full"></div>
-                  <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
-                  <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-                  <span className="text-gray-400 text-sm ml-2">API Endpoints</span>
-                </div>
-                
-                <div className="space-y-3 font-mono text-sm">
-                  {apiEndpoints.map((endpoint, index) => (
-                    <div key={index} className="border-l-2 border-green-500 pl-4 py-2">
-                      <div className="flex items-center gap-2 mb-1">
-                        <Badge className="bg-green-500/20 text-green-400 text-xs px-2 py-1">
-                          {endpoint.method}
-                        </Badge>
-                        <code className="text-gray-300">{endpoint.endpoint}</code>
-                      </div>
-                      <p className="text-gray-400 text-xs">{endpoint.description}</p>
-                    </div>
-                  ))}
-                </div>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Button 
+                  onClick={() => openModal("Request Integration Demo", "See how our platform integrates with your existing healthcare systems and workflows.")}
+                  className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 font-semibold rounded-xl"
+                >
+                  Request Demo
+                  <ArrowRight className="ml-2 w-5 h-5" />
+                </Button>
+                <Button 
+                  variant="outline" 
+                  onClick={() => openModal("Join Waitlist", "Get early access to our enterprise AI platform launching Q2 2026.")}
+                  className="border-white text-white hover:bg-white/10 px-6 py-3 font-semibold rounded-xl"
+                >
+                  Join Waitlist
+                </Button>
               </div>
             </div>
           </div>

@@ -96,7 +96,7 @@ export function Hero() {
           {/* Subtitle */}
           <p className="text-base sm:text-lg md:text-xl leading-relaxed max-w-3xl text-gray-600 animate-fade-in-up animation-delay-700 font-medium px-4">
             Cloud-native SaaS platform that processes <strong className="text-gray-900">500+ biomarkers</strong> using transformer models and deep learning. 
-            Deploy via API in minutes with <strong className="text-gray-900">99.9% uptime SLA</strong>. Launching Q2 2026.
+            Enterprise-grade platform with <strong className="text-gray-900">99.9% uptime SLA</strong>. Launching Q2 2026.
           </p>
 
           {/* Stats */}
@@ -106,8 +106,8 @@ export function Hero() {
               <div className="text-sm sm:text-base text-gray-600 font-medium">Uptime SLA</div>
             </div>
             <div className="text-center">
-              <div className="text-xl sm:text-2xl md:text-4xl font-black text-gray-900 mb-1">&lt;100ms</div>
-              <div className="text-sm sm:text-base text-gray-600 font-medium">API Response</div>
+              <div className="text-xl sm:text-2xl md:text-4xl font-black text-gray-900 mb-1">94%</div>
+              <div className="text-sm sm:text-base text-gray-600 font-medium">AI Accuracy</div>
             </div>
             <div className="text-center">
               <div className="text-xl sm:text-2xl md:text-4xl font-black text-gray-900 mb-1">500+</div>
@@ -128,11 +128,11 @@ export function Hero() {
             <Button
               variant="outline"
               size="lg"
-              onClick={() => openModal("View API Documentation", "Explore our comprehensive API documentation and integration guides for developers and healthcare organizations.")}
+              onClick={() => openModal("Learn More", "Discover how our AI platform transforms healthcare data into actionable insights for better patient outcomes.")}
               className="border-2 border-gray-200 hover:border-gray-300 bg-white text-gray-900 hover:text-gray-900 px-6 sm:px-10 py-4 text-base sm:text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] w-full sm:w-auto"
             >
               <Play className="mr-2 w-5 h-5 sm:w-6 sm:h-6" />
-              View API Docs
+              Learn More
             </Button>
           </div>
 
