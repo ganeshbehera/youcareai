@@ -18,7 +18,6 @@ const navigation = [
       { name: "Integrations", href: "/integrations" }
     ]
   },
-  { name: "Customers", href: "/customers" },
   { name: "About", href: "/about" },
   { name: "Contact", href: "/contact" }
 ]
