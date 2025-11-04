@@ -3,6 +3,7 @@ import type { Metadata } from "next"
 import { Geist, Geist_Mono, Manrope } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import { Suspense } from "react"
+import { Navigation } from "@/components/navigation"
 import "./globals.css"
 
 const geistSans = Geist({
@@ -136,6 +137,7 @@ export default function RootLayout({
         />
       </head>
       <body className="bg-background text-foreground font-sans">
+        <Navigation />
         <Suspense
           fallback={
             <div className="fixed inset-0 grid place-items-center">
