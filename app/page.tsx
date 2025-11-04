@@ -1,10 +1,13 @@
 import { Hero } from "@/components/yourcare/hero"
 import { Problem } from "@/components/yourcare/problem"
 import { Solution } from "@/components/yourcare/solution"
-import { AboutUs } from "@/components/yourcare/about-us"
-import { HowItWorks } from "@/components/yourcare/how-it-works"
+import { ProductFeatures } from "@/components/yourcare/product-features"
+import { Integrations } from "@/components/yourcare/integrations"
 import { DashboardDemo } from "@/components/yourcare/dashboard-demo"
-import { Testimonials } from "@/components/yourcare/testimonials"
+import { HowItWorks } from "@/components/yourcare/how-it-works"
+import { EnterpriseCustomers } from "@/components/yourcare/enterprise-customers"
+import { PricingTiers } from "@/components/yourcare/pricing-tiers"
+import { AboutUs } from "@/components/yourcare/about-us"
 import { FinalCTA } from "@/components/yourcare/final-cta"
 import { SiteFooter } from "@/components/yourcare/site-footer"
 
@@ -14,10 +17,13 @@ export default function Page() {
       <Hero />
       <Problem />
       <Solution />
-      <AboutUs />
+      <ProductFeatures />
+      <Integrations />
       <DashboardDemo />
       <HowItWorks />
-      <Testimonials />
+      <EnterpriseCustomers />
+      <PricingTiers />
+      <AboutUs />
       <FinalCTA />
       <SiteFooter />
     </main>

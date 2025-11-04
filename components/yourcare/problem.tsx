@@ -14,14 +14,14 @@ export function Problem() {
           </div>
           
                     <h2 className="text-2xl sm:text-3xl md:text-5xl font-black mb-8 animate-fade-in-up animation-delay-300 max-w-4xl mx-auto leading-tight px-4">
-            Healthcare Data Is
+            Healthcare Organizations Need
             <br />
-            <span className="text-red-600">Massively Underutilized</span>
+            <span className="text-red-600">Scalable AI Infrastructure</span>
           </h2>
 
           <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-4xl mx-auto animate-fade-in-up animation-delay-500 leading-relaxed font-medium px-4">
-            Healthcare generates 30% of global data, yet 97% remains unused. Traditional systems can't process multi-modal health data at scale.
-            <strong className="text-gray-900"> AI can unlock these insights.</strong>
+            Healthcare generates 30% of global data, yet 97% remains unused. Legacy systems lack the infrastructure to deploy AI at scale.
+            <strong className="text-gray-900"> Enterprise platforms can change this.</strong>
           </p>
         </div>
 
@@ -29,19 +29,19 @@ export function Problem() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-16 sm:mb-20 px-4">
           {[
             {
-              number: "97%",
-              label: "Healthcare data goes unused",
-              subtext: "Vast amounts of health data never analyzed"
+              number: "87%",
+              label: "Organizations lack AI infrastructure",
+              subtext: "Can't deploy machine learning at enterprise scale"
             },
             {
-              number: "30%",
-              label: "Of global data is healthcare",
-              subtext: "Yet most systems can't process it effectively"
+              number: "6-12mo",
+              label: "Time to deploy custom AI",
+              subtext: "Building from scratch takes months or years"
             },
             {
-              number: "2.5EB",
-              label: "Healthcare data generated daily",
-              subtext: "Growing exponentially with IoT devices"
+              number: "$2.5M",
+              label: "Average AI infrastructure cost",
+              subtext: "Before seeing any business value"
             }
           ].map((stat, index) => (
             <div key={index} className="text-center p-6 sm:p-8 bg-gray-50 rounded-2xl animate-fade-in-up sm:col-span-1 lg:col-span-1" style={{ animationDelay: `${0.7 + index * 0.2}s` }}>
@@ -53,14 +53,14 @@ export function Problem() {
         </div>
 
                 {/* Real Impact */}
-        <div className="text-center bg-gradient-to-r from-red-50 to-orange-50 rounded-3xl p-6 sm:p-8 md:p-12 animate-fade-in-up animation-delay-1300 mx-4">
+        <div className="text-center bg-gradient-to-r from-blue-50 to-purple-50 rounded-3xl p-6 sm:p-8 md:p-12 animate-fade-in-up animation-delay-1300 mx-4">
           <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-            The Opportunity
+            The SaaS Solution
           </h3>
           <p className="text-base sm:text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
-            Advanced AI can process multi-modal health data streams in real-time, identifying patterns invisible to traditional analytics.
-            <strong className="text-red-600"> The technology exists — it just needs the right platform.</strong>
-            That's what we've built.
+            Enterprise AI platforms eliminate the need for custom infrastructure. Deploy production-ready AI in minutes, not months.
+            <strong className="text-blue-600"> Scale from prototype to millions of users with enterprise SLA.</strong>
+            That's the power of our platform.
           </p>
         </div>
       </div>

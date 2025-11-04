@@ -78,7 +78,7 @@ export function Hero() {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-6 py-3 bg-white shadow-lg rounded-full border border-gray-100 animate-fade-in animation-delay-300">
             <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-            <span className="text-gray-700 font-medium">AI Platform • Beta Access</span>
+            <span className="text-gray-700 font-medium">Enterprise SaaS Platform • Now in Beta</span>
           </div>
 
           {/* Main headline */}
@@ -86,32 +86,32 @@ export function Hero() {
             id="hero-title"
             className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-black leading-[1.1] text-gray-900 animate-fade-in-up animation-delay-500 max-w-5xl px-4"
           >
-            AI-Powered Health
+            Enterprise AI Platform for
             <br />
             <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent">
-              Intelligence Platform
+              Health Intelligence
             </span>
           </h1>
 
           {/* Subtitle */}
           <p className="text-base sm:text-lg md:text-xl leading-relaxed max-w-3xl text-gray-600 animate-fade-in-up animation-delay-700 font-medium px-4">
-            Advanced machine learning algorithms analyze 500+ biomarkers to predict health risks <strong className="text-gray-900">6 months early</strong> with 94% accuracy. 
-            Enterprise-grade SaaS platform <strong className="text-gray-900">launching Q2 2026</strong>.
+            Cloud-native SaaS platform that processes <strong className="text-gray-900">500+ biomarkers</strong> using transformer models and deep learning. 
+            Deploy via API in minutes with <strong className="text-gray-900">99.9% uptime SLA</strong>. Launching Q2 2026.
           </p>
 
           {/* Stats */}
           <div className="grid grid-cols-3 gap-4 sm:gap-8 md:gap-16 mt-8 animate-fade-in-up animation-delay-900 px-4">
             <div className="text-center">
+              <div className="text-xl sm:text-2xl md:text-4xl font-black text-gray-900 mb-1">99.9%</div>
+              <div className="text-sm sm:text-base text-gray-600 font-medium">Uptime SLA</div>
+            </div>
+            <div className="text-center">
+              <div className="text-xl sm:text-2xl md:text-4xl font-black text-gray-900 mb-1">&lt;100ms</div>
+              <div className="text-sm sm:text-base text-gray-600 font-medium">API Response</div>
+            </div>
+            <div className="text-center">
               <div className="text-xl sm:text-2xl md:text-4xl font-black text-gray-900 mb-1">500+</div>
               <div className="text-sm sm:text-base text-gray-600 font-medium">Biomarkers</div>
-            </div>
-            <div className="text-center">
-              <div className="text-xl sm:text-2xl md:text-4xl font-black text-gray-900 mb-1">94%</div>
-              <div className="text-sm sm:text-base text-gray-600 font-medium">Test Accuracy</div>
-            </div>
-            <div className="text-center">
-              <div className="text-xl sm:text-2xl md:text-4xl font-black text-gray-900 mb-1">Q2</div>
-              <div className="text-sm sm:text-base text-gray-600 font-medium">2026 Launch</div>
             </div>
           </div>
 
@@ -119,10 +119,10 @@ export function Hero() {
           <div className="flex flex-col sm:flex-row gap-4 mt-12 animate-fade-in-up animation-delay-1100 px-4">
             <Button 
               size="lg" 
-              onClick={() => openModal("Request Platform Demo", "Get exclusive access to our AI health intelligence platform and see how it transforms healthcare data into predictive insights.")}
+              onClick={() => openModal("Start Free Trial", "Get 30-day free access to our enterprise AI platform and start building with our health intelligence APIs.")}
               className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-6 sm:px-10 py-4 text-base sm:text-lg font-semibold rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-[1.02] border-0 w-full sm:w-auto"
             >
-              Request Demo
+              Start Free Trial
               <ArrowRight className="ml-2 w-5 h-5 sm:w-6 sm:h-6" />
             </Button>
             <Button
