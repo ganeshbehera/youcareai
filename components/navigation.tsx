@@ -19,7 +19,6 @@ const navigation = [
       { name: "API Docs", href: "/api-docs" }
     ]
   },
-  { name: "Pricing", href: "/pricing" },
   { name: "Customers", href: "/customers" },
   { name: "About", href: "/about" },
   { name: "Contact", href: "/contact" }
@@ -113,10 +112,10 @@ export function Navigation() {
           {/* CTA Button */}
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <Button
-              onClick={() => openModal("Start Free Trial", "Get 30-day free access to our enterprise AI platform and start building with our health intelligence APIs.")}
+              onClick={() => openModal("Join Waitlist", "Get early access to our enterprise AI platform launching Q2 2026. Be among the first to transform healthcare with AI.")}
               className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-6 py-2 rounded-lg font-semibold"
             >
-              Start Free Trial
+              Join Waitlist
             </Button>
           </div>
         </nav>
@@ -183,11 +182,11 @@ export function Navigation() {
                     <Button
                       onClick={() => {
                         setMobileMenuOpen(false)
-                        openModal("Start Free Trial", "Get 30-day free access to our enterprise AI platform and start building with our health intelligence APIs.")
+                        openModal("Join Waitlist", "Get early access to our enterprise AI platform launching Q2 2026. Be among the first to transform healthcare with AI.")
                       }}
                       className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-6 py-3 rounded-lg font-semibold"
                     >
-                      Start Free Trial
+                      Join Waitlist
                     </Button>
                   </div>
                 </div>

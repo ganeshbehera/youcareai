@@ -77,8 +77,8 @@ export function Hero() {
 
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-6 py-3 bg-white shadow-lg rounded-full border border-gray-100 animate-fade-in animation-delay-300">
-            <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-            <span className="text-gray-700 font-medium">Enterprise SaaS Platform • Now in Beta</span>
+            <div className="w-2 h-2 bg-orange-500 rounded-full animate-pulse"></div>
+            <span className="text-gray-700 font-medium">Launching Q2 2026 • Join Waitlist Now</span>
           </div>
 
           {/* Main headline */}
@@ -119,10 +119,10 @@ export function Hero() {
           <div className="flex flex-col sm:flex-row gap-4 mt-12 animate-fade-in-up animation-delay-1100 px-4">
             <Button 
               size="lg" 
-              onClick={() => openModal("Start Free Trial", "Get 30-day free access to our enterprise AI platform and start building with our health intelligence APIs.")}
+              onClick={() => openModal("Join Waitlist", "Get early access to our enterprise AI platform launching Q2 2026. Be among the first to transform healthcare with AI.")}
               className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-6 sm:px-10 py-4 text-base sm:text-lg font-semibold rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-[1.02] border-0 w-full sm:w-auto"
             >
-              Start Free Trial
+              Join Waitlist
               <ArrowRight className="ml-2 w-5 h-5 sm:w-6 sm:h-6" />
             </Button>
             <Button

@@ -153,10 +153,10 @@ export function ProductFeatures() {
             </div>
             
             <Button 
-              onClick={() => openModal("Request Technical Demo", "See our AI platform in action with a live technical demonstration of our APIs and capabilities.")}
+              onClick={() => openModal("Join Early Access", "Get early access to our enterprise AI platform and be among the first to experience next-generation health intelligence.")}
               className="mt-8 bg-white text-blue-600 hover:bg-gray-100 px-8 py-3 font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
             >
-              Request Technical Demo
+              Join Early Access
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
           </div>

@@ -134,7 +134,7 @@ function ApiDocsContent() {
           <div className="mx-auto max-w-4xl px-4 text-center">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 rounded-full mb-8">
               <Code className="w-5 h-5" />
-              <span className="font-semibold">API Documentation</span>
+              <span className="font-semibold">API Documentation • Coming Q2 2026</span>
             </div>
             <h1 className="text-4xl md:text-6xl font-black mb-6">
               Developer
@@ -142,7 +142,7 @@ function ApiDocsContent() {
             </h1>
             <p className="text-xl text-gray-300 leading-relaxed mb-8">
               Comprehensive documentation, SDKs, and integration guides for our health intelligence platform. 
-              Build powerful healthcare applications with our enterprise APIs.
+              Join our waitlist for early access to developer resources launching Q2 2026.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
