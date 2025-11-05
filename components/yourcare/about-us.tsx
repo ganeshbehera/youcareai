@@ -9,30 +9,16 @@ const teamMembers = [
   {
     name: "Riaz Karim",
     role: "Co-Founder & CEO",
-    experience: "Software engineer with 6 years experience in healthcare technology. Previously worked on data analytics platforms at mid-size health tech companies. Led development of health monitoring systems serving 50,000+ users. Passionate about using AI to improve healthcare outcomes.",
+    experience: "Senior executive with extensive experience in financial technology and operations. Previously held senior positions in Sales and Trading COO roles across numerous Tier 1 banks and financial institutions. Based in London with deep expertise in building scalable technology platforms for complex data environments.",
     image: "/riaz-karim.png",
-    linkedin: "https://www.linkedin.com/in/riaz-karim"
-  },
-  {
-    name: "Rajesh Raj",
-    role: "Co-Founder & CTO",
-    experience: "Full-stack developer with 5 years experience building scalable web applications. Computer Science graduate with focus on machine learning and distributed systems. Previously developed health monitoring systems for startups. Expert in cloud infrastructure and AI model deployment.",
-    image: "/rajesh-raj.jpeg",
-    linkedin: "https://www.linkedin.com/in/rajesh-raj"
+    linkedin: "https://www.linkedin.com/in/riaz-karim-41125118/"
   },
   {
     name: "Ramesh Iyer",
-    role: "Product Manager",
-    experience: "Product manager with 4 years experience in SaaS platforms. Previously worked at healthcare startups focusing on user experience and product development. MBA in Business Administration. Led product launches reaching 100,000+ users.",
+    role: "Co-Founder & CTO",
+    experience: "Technology leader with extensive experience in building enterprise software platforms. Expert in cloud infrastructure, AI/ML systems, and healthcare technology. Previously led engineering teams developing scalable SaaS solutions. Passionate about leveraging technology to solve complex healthcare challenges.",
     image: "/ramesh-iyer.png",
-    linkedin: "https://www.linkedin.com/in/ramesh-iyer"
-  },
-  {
-    name: "Sarah Imbach",
-    role: "Clinical Advisor",
-    experience: "Registered Nurse with 7 years clinical experience in acute care settings. BSN from nursing school, specialized in patient care and health monitoring. Provides clinical insights for product development and ensures medical accuracy of AI models.",
-    image: "/sarah-imbach.jpeg",
-    linkedin: "https://www.linkedin.com/in/sarah-imbach"
+    linkedin: "https://www.linkedin.com/in/rameshiyer57/"
   }
 ]
 
@@ -216,27 +202,27 @@ export function AboutUs() {
         <div className="mb-12">
           <div className="flex items-center gap-3 mb-6">
             <div className="w-1 h-8 bg-indigo-500 rounded-full"></div>
-            <h3 className="text-2xl md:text-3xl font-bold text-white">Leadership Team</h3>
+            <h3 className="text-2xl md:text-3xl font-bold text-white">Founding Team</h3>
           </div>
           
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid sm:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {teamMembers.map((member, index) => (
               <Card key={member.name} className="bg-[#1a1a24] border-[#2d2d3d] hover:border-indigo-500/50 shadow-lg hover:shadow-indigo-500/20 transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: `${800 + index * 100}ms`}}>
                 <CardContent className="p-6">
                   <div className="mb-4 relative">
-                    <div className="w-24 h-24 mx-auto rounded-full overflow-hidden border-2 border-indigo-500/30">
+                    <div className="w-32 h-32 mx-auto rounded-full overflow-hidden border-2 border-indigo-500/30">
                       <Image
                         src={member.image}
                         alt={member.name}
-                        width={96}
-                        height={96}
+                        width={128}
+                        height={128}
                         className="w-full h-full object-cover"
                       />
                     </div>
                   </div>
                   
                   <div className="text-center mb-3">
-                    <h4 className="text-lg font-bold text-white mb-1">{member.name}</h4>
+                    <h4 className="text-xl font-bold text-white mb-1">{member.name}</h4>
                     <p className="text-sm text-indigo-400 font-medium mb-3">{member.role}</p>
                   </div>
                   
@@ -249,7 +235,7 @@ export function AboutUs() {
                     className="flex items-center justify-center gap-2 w-full px-4 py-2 bg-indigo-500/10 hover:bg-indigo-500/20 border border-indigo-500/30 hover:border-indigo-500/50 rounded-lg transition-all group"
                   >
                     <Linkedin className="w-4 h-4 text-indigo-400 group-hover:text-indigo-300" />
-                    <span className="text-sm text-indigo-400 group-hover:text-indigo-300 font-medium">View LinkedIn</span>
+                    <span className="text-sm text-indigo-400 group-hover:text-indigo-300 font-medium">View LinkedIn Profile</span>
                   </Link>
                 </CardContent>
               </Card>
