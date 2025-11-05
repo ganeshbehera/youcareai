@@ -120,74 +120,81 @@ export function Navigation() {
 
         {/* Mobile menu */}
         {mobileMenuOpen && (
-          <div className="lg:hidden">
-            <div className="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm" />
-            <div className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-[#0a0a0f] px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-indigo-500/20 border-l border-[#2d2d3d]">
-              <div className="flex items-center justify-between">
-                <Link href="/" className="-m-1.5 p-1.5">
+          <div className="lg:hidden fixed inset-0 z-[100]">
+            {/* Backdrop */}
+            <div 
+              className="fixed inset-0 bg-black/70 backdrop-blur-sm"
+              onClick={() => setMobileMenuOpen(false)}
+            />
+            
+            {/* Menu Panel */}
+            <div className="fixed inset-y-0 right-0 w-full overflow-y-auto bg-[#1a1a24] px-6 py-6 sm:max-w-sm shadow-2xl border-l-2 border-indigo-500/30">
+              {/* Header */}
+              <div className="flex items-center justify-between mb-8">
+                <Link href="/" className="-m-1.5 p-1.5" onClick={() => setMobileMenuOpen(false)}>
                   <Image
                     src="/yourcareailogo.png"
                     alt="YourCareAI"
                     width={150}
                     height={50}
-                    className="h-8 w-auto"
+                    className="h-8 w-auto brightness-110"
                   />
                 </Link>
                 <button
                   type="button"
-                  className="-m-2.5 rounded-md p-2.5 text-gray-300"
+                  className="-m-2.5 rounded-md p-2.5 text-gray-300 hover:text-white hover:bg-[#2d2d3d] transition-colors"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   <X className="h-6 w-6" aria-hidden="true" />
                 </button>
               </div>
-              <div className="mt-6 flow-root">
-                <div className="-my-6 divide-y divide-gray-500/10">
-                  <div className="space-y-2 py-6">
-                    {navigation.map((item) => (
-                      <div key={item.name}>
-                        {item.submenu ? (
-                          <div>
-                            <div className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-300">
-                              {item.name}
-                            </div>
-                            <div className="ml-4 space-y-1">
-                              {item.submenu.map((subItem) => (
-                                <Link
-                                  key={subItem.name}
-                                  href={subItem.href}
-                                  className="-mx-3 block rounded-lg px-3 py-2 text-sm leading-7 text-gray-400 hover:bg-[#1a1a24] hover:text-indigo-400"
-                                  onClick={() => setMobileMenuOpen(false)}
-                                >
-                                  {subItem.name}
-                                </Link>
-                              ))}
-                            </div>
-                          </div>
-                        ) : (
-                          <Link
-                            href={item.href}
-                            className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-300 hover:bg-[#1a1a24] hover:text-indigo-400"
-                            onClick={() => setMobileMenuOpen(false)}
-                          >
-                            {item.name}
-                          </Link>
-                        )}
+
+              {/* Navigation Links */}
+              <div className="space-y-3">
+                {navigation.map((item) => (
+                  <div key={item.name}>
+                    {item.submenu ? (
+                      <div className="space-y-2">
+                        <div className="px-4 py-3 text-base font-semibold text-white bg-[#0a0a0f] rounded-lg border border-[#2d2d3d]">
+                          {item.name}
+                        </div>
+                        <div className="ml-4 space-y-1">
+                          {item.submenu.map((subItem) => (
+                            <Link
+                              key={subItem.name}
+                              href={subItem.href}
+                              className="block px-4 py-2.5 text-sm text-gray-400 hover:bg-[#0a0a0f] hover:text-indigo-400 rounded-lg transition-colors"
+                              onClick={() => setMobileMenuOpen(false)}
+                            >
+                              {subItem.name}
+                            </Link>
+                          ))}
+                        </div>
                       </div>
-                    ))}
+                    ) : (
+                      <Link
+                        href={item.href}
+                        className="block px-4 py-3 text-base font-semibold text-white hover:bg-[#0a0a0f] hover:text-indigo-400 rounded-lg transition-colors border border-[#2d2d3d]"
+                        onClick={() => setMobileMenuOpen(false)}
+                      >
+                        {item.name}
+                      </Link>
+                    )}
                   </div>
-                  <div className="py-6">
-                    <Button
-                      onClick={() => {
-                        setMobileMenuOpen(false)
-                        openModal("Join Waitlist", "Get early access to our enterprise AI platform launching Q2 2026. Be among the first to transform healthcare with AI.")
-                      }}
-                      className="w-full bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white px-6 py-3 rounded-lg font-semibold shadow-lg shadow-indigo-500/20"
-                    >
-                      Join Waitlist
-                    </Button>
-                  </div>
-                </div>
+                ))}
+              </div>
+
+              {/* CTA Button */}
+              <div className="mt-8 pt-6 border-t border-[#2d2d3d]">
+                <Button
+                  onClick={() => {
+                    setMobileMenuOpen(false)
+                    openModal("Join Waitlist", "Get early access to our enterprise AI platform launching Q2 2026. Be among the first to transform healthcare with AI.")
+                  }}
+                  className="w-full bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white px-6 py-4 rounded-lg font-semibold shadow-lg shadow-indigo-500/30 text-base"
+                >
+                  Join Waitlist
+                </Button>
               </div>
             </div>
           </div>
