@@ -52,12 +52,12 @@ export default function ContactPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-[#0a0a0f]">
       {/* Header */}
-      <div className="bg-white shadow-sm">
+      <div className="bg-[#0a0a0f] border-b border-[#2d2d3d]">
         <div className="max-w-6xl mx-auto px-4 py-6">
           <Link href="/">
-            <Button variant="ghost" className="mb-4">
+            <Button variant="ghost" className="mb-4 text-gray-300 hover:text-white hover:bg-[#1a1a24]">
               <ArrowLeft className="w-4 h-4 mr-2" />
               Back to Home
             </Button>
@@ -68,14 +68,14 @@ export default function ContactPage() {
               alt="YourCareAI Logo"
               width={120}
               height={48}
-              className="h-10 w-auto"
+              className="h-10 w-auto brightness-110"
             />
             <div className="flex items-center gap-3">
-              <Mail className="w-8 h-8 text-blue-600" />
-              <h1 className="text-3xl font-bold text-gray-900">Contact Us</h1>
+              <Mail className="w-8 h-8 text-indigo-400" />
+              <h1 className="text-3xl font-bold text-white">Contact Us</h1>
             </div>
           </div>
-          <p className="text-gray-600 mt-2">Get in touch with the YourCareAI team</p>
+          <p className="text-gray-400 mt-2">Get in touch with the YourCareAI team</p>
         </div>
       </div>
 
@@ -85,27 +85,27 @@ export default function ContactPage() {
           
           {/* Contact Form */}
           <div>
-            <Card>
+            <Card className="bg-[#1a1a24] border-[#2d2d3d]">
               <CardHeader>
-                <CardTitle className="text-2xl">Send us a message</CardTitle>
-                <p className="text-gray-600">
+                <CardTitle className="text-2xl text-white">Send us a message</CardTitle>
+                <p className="text-gray-400">
                   We'd love to hear from you. Send us a message and we'll respond as soon as possible.
                 </p>
               </CardHeader>
               <CardContent>
                 {isSubmitted ? (
                   <div className="text-center py-8">
-                    <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <Mail className="w-8 h-8 text-green-600" />
+                    <div className="w-16 h-16 bg-green-500/10 border border-green-500/30 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <Mail className="w-8 h-8 text-green-400" />
                     </div>
-                    <h3 className="text-lg font-semibold text-green-700 mb-2">Message Sent!</h3>
-                    <p className="text-gray-600">Thank you for contacting us. We'll get back to you within 24 hours.</p>
+                    <h3 className="text-lg font-semibold text-green-400 mb-2">Message Sent!</h3>
+                    <p className="text-gray-400">Thank you for contacting us. We'll get back to you within 24 hours.</p>
                   </div>
                 ) : (
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div>
-                        <Label htmlFor="name">Full Name *</Label>
+                        <Label htmlFor="name" className="text-gray-300">Full Name *</Label>
                         <Input
                           id="name"
                           name="name"
@@ -113,11 +113,11 @@ export default function ContactPage() {
                           value={formData.name}
                           onChange={handleInputChange}
                           required
-                          className="mt-1"
+                          className="mt-1 bg-[#0a0a0f] border-[#2d2d3d] text-white"
                         />
                       </div>
                       <div>
-                        <Label htmlFor="email">Email Address *</Label>
+                        <Label htmlFor="email" className="text-gray-300">Email Address *</Label>
                         <Input
                           id="email"
                           name="email"
@@ -125,13 +125,13 @@ export default function ContactPage() {
                           value={formData.email}
                           onChange={handleInputChange}
                           required
-                          className="mt-1"
+                          className="mt-1 bg-[#0a0a0f] border-[#2d2d3d] text-white"
                         />
                       </div>
                     </div>
 
                     <div>
-                      <Label htmlFor="subject">Subject *</Label>
+                      <Label htmlFor="subject" className="text-gray-300">Subject *</Label>
                       <Input
                         id="subject"
                         name="subject"
@@ -139,12 +139,12 @@ export default function ContactPage() {
                         value={formData.subject}
                         onChange={handleInputChange}
                         required
-                        className="mt-1"
+                        className="mt-1 bg-[#0a0a0f] border-[#2d2d3d] text-white"
                       />
                     </div>
 
                     <div>
-                      <Label htmlFor="message">Message *</Label>
+                      <Label htmlFor="message" className="text-gray-300">Message *</Label>
                       <Textarea
                         id="message"
                         name="message"
@@ -152,14 +152,14 @@ export default function ContactPage() {
                         onChange={handleInputChange}
                         required
                         rows={6}
-                        className="mt-1"
+                        className="mt-1 bg-[#0a0a0f] border-[#2d2d3d] text-white"
                         placeholder="Tell us how we can help you..."
                       />
                     </div>
 
                     <Button
                       type="submit"
-                      className="w-full bg-blue-600 hover:bg-blue-700"
+                      className="w-full bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white"
                       disabled={isSubmitting}
                     >
                       {isSubmitting ? (
@@ -181,25 +181,25 @@ export default function ContactPage() {
           <div className="space-y-8">
             
             {/* Contact Details */}
-            <Card>
+            <Card className="bg-[#1a1a24] border-[#2d2d3d]">
               <CardHeader>
-                <CardTitle>Get in Touch</CardTitle>
+                <CardTitle className="text-white">Get in Touch</CardTitle>
               </CardHeader>
               <CardContent className="space-y-6">
                 <div className="flex items-start gap-4">
-                  <Mail className="w-6 h-6 text-blue-600 mt-1" />
+                  <Mail className="w-6 h-6 text-indigo-400 mt-1" />
                   <div>
-                    <h3 className="font-semibold text-gray-900">Email</h3>
-                    <p className="text-gray-600">hello@yourcareai.com</p>
+                    <h3 className="font-semibold text-white">Email</h3>
+                    <p className="text-gray-400">hello@yourcareai.com</p>
                     <p className="text-sm text-gray-500">We'll respond within 24 hours</p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <MapPin className="w-6 h-6 text-blue-600 mt-1" />
+                  <MapPin className="w-6 h-6 text-indigo-400 mt-1" />
                   <div>
-                    <h3 className="font-semibold text-gray-900">Address</h3>
-                    <p className="text-gray-600">
+                    <h3 className="font-semibold text-white">Address</h3>
+                    <p className="text-gray-400">
                       Suite A 82 James Carter Road<br />
                       Mildenhall, Bury St. Edmunds<br />
                       England, IP28 7DE
@@ -208,10 +208,10 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <Clock className="w-6 h-6 text-blue-600 mt-1" />
+                  <Clock className="w-6 h-6 text-indigo-400 mt-1" />
                   <div>
-                    <h3 className="font-semibold text-gray-900">Response Time</h3>
-                    <p className="text-gray-600">Within 24 hours</p>
+                    <h3 className="font-semibold text-white">Response Time</h3>
+                    <p className="text-gray-400">Within 24 hours</p>
                     <p className="text-sm text-gray-500">Monday - Friday, 9 AM - 6 PM GMT</p>
                   </div>
                 </div>
@@ -221,21 +221,21 @@ export default function ContactPage() {
 
 
             {/* Support Types */}
-            <Card>
+            <Card className="bg-[#1a1a24] border-[#2d2d3d]">
               <CardHeader>
-                <CardTitle>How can we help?</CardTitle>
+                <CardTitle className="text-white">How can we help?</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="grid grid-cols-2 gap-4">
-                  <div className="text-center p-4 bg-blue-50 rounded-lg">
-                    <Mail className="w-8 h-8 text-blue-600 mx-auto mb-2" />
-                    <h4 className="font-medium text-gray-900">General Inquiries</h4>
-                    <p className="text-xs text-gray-600">Questions about our service</p>
+                  <div className="text-center p-4 bg-indigo-500/10 border border-indigo-500/30 rounded-lg">
+                    <Mail className="w-8 h-8 text-indigo-400 mx-auto mb-2" />
+                    <h4 className="font-medium text-white">General Inquiries</h4>
+                    <p className="text-xs text-gray-400">Questions about our service</p>
                   </div>
-                  <div className="text-center p-4 bg-green-50 rounded-lg">
-                    <Phone className="w-8 h-8 text-green-600 mx-auto mb-2" />
-                    <h4 className="font-medium text-gray-900">Partnership</h4>
-                    <p className="text-xs text-gray-600">Healthcare partnerships</p>
+                  <div className="text-center p-4 bg-green-500/10 border border-green-500/30 rounded-lg">
+                    <Phone className="w-8 h-8 text-green-400 mx-auto mb-2" />
+                    <h4 className="font-medium text-white">Partnership</h4>
+                    <p className="text-xs text-gray-400">Healthcare partnerships</p>
                   </div>
                 </div>
               </CardContent>

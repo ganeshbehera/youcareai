@@ -28,14 +28,14 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <main className="font-sans overflow-x-hidden pt-20">
-      <div className="bg-gradient-to-b from-gray-50 to-white py-16">
+    <main className="font-sans overflow-x-hidden pt-20 bg-[#0a0a0f]">
+      <div className="bg-[#0a0a0f] py-16 border-b border-[#2d2d3d]">
         <div className="mx-auto max-w-4xl px-4 text-center">
-          <h1 className="text-4xl md:text-6xl font-black mb-6 text-gray-900">
+          <h1 className="text-4xl md:text-6xl font-black mb-6 text-white">
             About
-            <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"> YourCareAI</span>
+            <span className="bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent"> YourCareAI</span>
           </h1>
-          <p className="text-xl text-gray-600 leading-relaxed">
+          <p className="text-xl text-gray-400 leading-relaxed">
             We're building the future of healthcare with enterprise AI platform that transforms 
             healthcare data into actionable intelligence for better patient outcomes.
           </p>

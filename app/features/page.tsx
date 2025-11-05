@@ -28,18 +28,18 @@ export const metadata: Metadata = {
 
 export default function FeaturesPage() {
   return (
-    <main className="font-sans overflow-x-hidden pt-20">
-      <div className="bg-gradient-to-b from-blue-50 to-white py-16">
+    <main className="font-sans overflow-x-hidden pt-20 bg-[#0a0a0f]">
+      <div className="bg-[#0a0a0f] py-16 border-b border-[#2d2d3d]">
         <div className="mx-auto max-w-4xl px-4 text-center">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-orange-100 rounded-full mb-6">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-orange-500/10 border border-orange-500/30 rounded-full mb-6">
             <div className="w-2 h-2 bg-orange-500 rounded-full animate-pulse"></div>
-            <span className="text-orange-800 font-semibold text-sm">Launching Q2 2026</span>
+            <span className="text-orange-300 font-semibold text-sm">Launching Q2 2026</span>
           </div>
-          <h1 className="text-4xl md:text-6xl font-black mb-6 text-gray-900">
+          <h1 className="text-4xl md:text-6xl font-black mb-6 text-white">
             Platform
-            <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"> Features</span>
+            <span className="bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent"> Features</span>
           </h1>
-          <p className="text-xl text-gray-600 leading-relaxed">
+          <p className="text-xl text-gray-400 leading-relaxed">
             Comprehensive AI platform built for enterprise healthcare organizations. 
             Join our waitlist for early access to next-generation health intelligence.
           </p>
