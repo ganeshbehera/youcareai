@@ -1,6 +1,7 @@
-import { FileText, ArrowLeft } from "lucide-react"
+import { FileText, ArrowLeft, AlertTriangle, Scale, Shield, Users, Code, Zap } from "lucide-react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import { Card, CardContent } from "@/components/ui/card"
 import Image from "next/image"
 import type { Metadata } from "next"
 
@@ -25,182 +26,353 @@ export default function TermsPage() {
   return (
     <div className="min-h-screen bg-[#0a0a0f]">
       {/* Header */}
-      <div className="bg-[#0a0a0f] border-b border-[#2d2d3d]">
-        <div className="max-w-4xl mx-auto px-4 py-6">
+      <div className="bg-gradient-to-b from-[#0a0a0f] to-[#1a1a24] border-b border-[#2d2d3d]">
+        <div className="max-w-5xl mx-auto px-4 py-12">
           <Link href="/">
-            <Button variant="ghost" className="mb-4 text-gray-300 hover:text-white hover:bg-[#1a1a24]">
+            <Button variant="ghost" className="mb-6 text-gray-300 hover:text-white hover:bg-[#1a1a24]">
               <ArrowLeft className="w-4 h-4 mr-2" />
               Back to Home
             </Button>
           </Link>
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4 mb-4">
             <Image
               src="/yourcareailogo.png"
               alt="YourCareAI Logo"
-              width={120}
-              height={48}
-              className="h-10 w-auto brightness-110"
+              width={150}
+              height={60}
+              className="h-12 w-auto brightness-110"
             />
-            <div className="flex items-center gap-3">
+          </div>
+          <div className="flex items-center gap-4 mb-4">
+            <div className="p-3 bg-indigo-500/10 border border-indigo-500/30 rounded-xl">
               <FileText className="w-8 h-8 text-indigo-400" />
-              <h1 className="text-3xl font-bold text-white">Terms of Service</h1>
+            </div>
+            <div>
+              <h1 className="text-4xl md:text-5xl font-bold text-white">Terms of Service</h1>
+              <p className="text-gray-400 mt-2">Enterprise AI Platform Agreement</p>
             </div>
           </div>
-          <p className="text-gray-400 mt-2">Last updated: January 2026</p>
+          <p className="text-gray-500 text-sm mt-6">Last updated: January 15, 2026 • Effective: Q2 2026 Platform Launch</p>
         </div>
       </div>
 
       {/* Content */}
-      <div className="max-w-4xl mx-auto px-4 py-12">
-        <div className="bg-[#1a1a24] border border-[#2d2d3d] rounded-lg p-8 space-y-8">
+      <div className="max-w-5xl mx-auto px-4 py-16">
+        
+        {/* Key Points */}
+        <div className="grid md:grid-cols-3 gap-6 mb-16">
+          <Card className="bg-[#1a1a24] border-indigo-500/30 hover:border-indigo-500/50 transition-all">
+            <CardContent className="p-6 text-center">
+              <Scale className="w-12 h-12 text-indigo-400 mx-auto mb-4" />
+              <h3 className="text-lg font-bold text-white mb-2">Fair Usage</h3>
+              <p className="text-gray-400 text-sm">Enterprise-grade platform with transparent usage policies</p>
+            </CardContent>
+          </Card>
+          <Card className="bg-[#1a1a24] border-indigo-500/30 hover:border-indigo-500/50 transition-all">
+            <CardContent className="p-6 text-center">
+              <Shield className="w-12 h-12 text-indigo-400 mx-auto mb-4" />
+              <h3 className="text-lg font-bold text-white mb-2">99.9% SLA</h3>
+              <p className="text-gray-400 text-sm">Enterprise uptime guarantee with comprehensive support</p>
+            </CardContent>
+          </Card>
+          <Card className="bg-[#1a1a24] border-indigo-500/30 hover:border-indigo-500/50 transition-all">
+            <CardContent className="p-6 text-center">
+              <Users className="w-12 h-12 text-indigo-400 mx-auto mb-4" />
+              <h3 className="text-lg font-bold text-white mb-2">Your Data</h3>
+              <p className="text-gray-400 text-sm">You retain full ownership and control of your data</p>
+            </CardContent>
+          </Card>
+        </div>
+
+        {/* Main Content */}
+        <div className="space-y-12">
           
+          {/* Agreement */}
           <section>
-            <h2 className="text-2xl font-semibold text-white mb-4">Agreement to Terms</h2>
-            <p className="text-gray-400 leading-relaxed">
-              By accessing and using YourCareAI's AI health intelligence platform and APIs (operated by Digitbite Limited), you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by the above, please do not use this platform.
-            </p>
-          </section>
-
-          <section>
-            <h2 className="text-2xl font-semibold text-white mb-4">Description of Platform</h2>
-            <p className="text-gray-400 leading-relaxed mb-4">
-              YourCareAI provides an enterprise-grade AI health intelligence platform with APIs and software tools designed to enable organizations to:
-            </p>
-            <ul className="list-disc list-inside text-gray-400 space-y-2">
-              <li>Integrate AI-powered health analytics into their applications</li>
-              <li>Process multi-modal health data using machine learning models</li>
-              <li>Access predictive health intelligence through RESTful APIs</li>
-              <li>Deploy scalable health AI solutions in cloud environments</li>
-              <li>Leverage transformer models for biomarker analysis</li>
-            </ul>
-          </section>
-
-          <section>
-            <h2 className="text-2xl font-semibold text-white mb-4">Medical Disclaimer</h2>
-            <div className="bg-orange-500/10 border-l-4 border-orange-500 p-4 mb-4">
-              <p className="text-orange-300 font-medium">
-                IMPORTANT: YourCareAI is a technology platform providing AI tools and APIs. It is not a medical device or healthcare service provider.
-              </p>
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-1 h-8 bg-indigo-500 rounded-full"></div>
+              <h2 className="text-3xl font-bold text-white">Agreement to Terms</h2>
             </div>
-            <ul className="list-disc list-inside text-gray-400 space-y-2">
-              <li>Our platform provides AI models and APIs for integration by qualified organizations</li>
-              <li>End-user applications built with our platform must comply with applicable healthcare regulations</li>
-              <li>Organizations using our platform are responsible for their own regulatory compliance</li>
-              <li>Our AI models are designed for integration by healthcare professionals and organizations</li>
-              <li>We provide technology infrastructure, not direct medical advice or diagnosis</li>
-            </ul>
+            <Card className="bg-[#1a1a24] border-[#2d2d3d]">
+              <CardContent className="p-8">
+                <p className="text-gray-300 leading-relaxed text-lg mb-4">
+                  By accessing and using YourCareAI's enterprise AI health intelligence platform (operated by <strong className="text-white">Digitbite Limited</strong>), you accept and agree to be bound by these Terms of Service.
+                </p>
+                <p className="text-gray-300 leading-relaxed">
+                  These terms govern your use of our platform, APIs, and related services. If you do not agree to these terms, please do not use our platform.
+                </p>
+              </CardContent>
+            </Card>
           </section>
 
+          {/* Platform Description */}
           <section>
-            <h2 className="text-2xl font-semibold text-white mb-4">Platform Usage Responsibilities</h2>
-            <p className="text-gray-400 leading-relaxed mb-4">As an organization or developer using YourCareAI's platform, you agree to:</p>
-            <ul className="list-disc list-inside text-gray-400 space-y-2">
-              <li>Use the platform and APIs in compliance with applicable laws and regulations</li>
-              <li>Maintain the security and confidentiality of your API credentials</li>
-              <li>Implement appropriate data protection and privacy measures</li>
-              <li>Ensure proper regulatory compliance for healthcare applications</li>
-              <li>Report any security vulnerabilities or unauthorized access immediately</li>
-              <li>Use the platform according to your subscription tier and usage limits</li>
-              <li>Not attempt to reverse engineer, decompile, or compromise our AI models</li>
-            </ul>
-          </section>
-
-          <section>
-            <h2 className="text-2xl font-semibold text-white mb-4">Data Accuracy and Limitations</h2>
-            <p className="text-gray-400 leading-relaxed mb-4">
-              While we strive for accuracy, you acknowledge that:
-            </p>
-            <ul className="list-disc list-inside text-gray-400 space-y-2">
-              <li>AI predictions are based on statistical models and may not be 100% accurate</li>
-              <li>Health data from connected devices may contain errors</li>
-              <li>Our algorithms are continuously improving but not infallible</li>
-              <li>Individual health conditions may not fit standard patterns</li>
-              <li>You should verify important health information with healthcare providers</li>
-            </ul>
-          </section>
-
-          <section>
-            <h2 className="text-2xl font-semibold text-white mb-4">Privacy and Data Protection</h2>
-            <p className="text-gray-400 leading-relaxed">
-              Your privacy is important to us. Our collection, use, and protection of your personal and health information is governed by our Privacy Policy, which is incorporated into these Terms by reference. By using our service, you consent to our privacy practices as described in the Privacy Policy.
-            </p>
-          </section>
-
-          <section>
-            <h2 className="text-2xl font-semibold text-white mb-4">Intellectual Property</h2>
-            <p className="text-gray-400 leading-relaxed mb-4">
-              All content, features, and functionality of YourCareAI are owned by us and are protected by copyright, trademark, and other intellectual property laws. You may not:
-            </p>
-            <ul className="list-disc list-inside text-gray-400 space-y-2">
-              <li>Copy, modify, or distribute our content without permission</li>
-              <li>Use our trademarks or branding without authorization</li>
-              <li>Reverse engineer our algorithms or software</li>
-              <li>Create derivative works based on our service</li>
-            </ul>
-          </section>
-
-          <section>
-            <h2 className="text-2xl font-semibold text-white mb-4">Platform Availability and SLA</h2>
-            <p className="text-gray-400 leading-relaxed">
-              We strive to maintain 99.9% platform uptime but cannot guarantee uninterrupted API access. We reserve the right to perform maintenance, updates, or modifications to our platform with reasonable notice. We are not liable for any interruption of service or data processing delays during scheduled maintenance windows.
-            </p>
-          </section>
-
-          <section>
-            <h2 className="text-2xl font-semibold text-white mb-4">Limitation of Liability</h2>
-            <p className="text-gray-400 leading-relaxed mb-4">
-              To the fullest extent permitted by law, YourCareAI and Digitbite Limited shall not be liable for:
-            </p>
-            <ul className="list-disc list-inside text-gray-400 space-y-2">
-              <li>Any indirect, incidental, or consequential damages</li>
-              <li>Decisions made by end-users of applications built with our platform</li>
-              <li>Data processing errors or API response delays</li>
-              <li>Third-party integration failures or service dependencies</li>
-              <li>Any damages exceeding the amount paid for platform subscriptions</li>
-            </ul>
-          </section>
-
-          <section>
-            <h2 className="text-2xl font-semibold text-white mb-4">Indemnification</h2>
-            <p className="text-gray-400 leading-relaxed">
-              You agree to indemnify and hold harmless YourCareAI and Digitbite Limited from any claims, damages, or expenses arising from your use of our platform, violation of these terms, misuse of our APIs, or infringement of any rights of another party.
-            </p>
-          </section>
-
-          <section>
-            <h2 className="text-2xl font-semibold text-white mb-4">Termination</h2>
-            <p className="text-gray-400 leading-relaxed">
-              We may terminate or suspend your platform access and API credentials immediately, without prior notice, for conduct that we believe violates these Terms, exceeds usage limits, or is harmful to our platform infrastructure, other users, or third parties, or for any other reason in our sole discretion.
-            </p>
-          </section>
-
-          <section>
-            <h2 className="text-2xl font-semibold text-white mb-4">Governing Law</h2>
-            <p className="text-gray-400 leading-relaxed">
-              These Terms shall be governed by and construed in accordance with the laws of England and Wales, without regard to its conflict of law provisions. Any disputes shall be resolved in the courts of England and Wales.
-            </p>
-          </section>
-
-          <section>
-            <h2 className="text-2xl font-semibold text-white mb-4">Changes to Terms</h2>
-            <p className="text-gray-400 leading-relaxed">
-              We reserve the right to modify these Terms at any time. We will notify platform users of any material changes by posting the updated Terms on our website and sending notifications to registered developers. Your continued use of the platform after such changes constitutes acceptance of the new Terms.
-            </p>
-          </section>
-
-          <section>
-            <h2 className="text-2xl font-semibold text-white mb-4">Contact Information</h2>
-            <p className="text-gray-400 leading-relaxed mb-4">
-              If you have any questions about these Terms of Service, please contact us:
-            </p>
-            <div className="bg-[#0a0a0f] border border-[#2d2d3d] p-4 rounded-lg">
-              <p className="text-gray-300">
-                <strong className="text-white">Email:</strong> legal@yourcareai.com<br />
-                <strong className="text-white">Company:</strong> Digitbite Limited<br />
-                <strong className="text-white">Address:</strong> Suite A 82 James Carter Road<br />
-                Mildenhall, Bury St. Edmunds, England, IP28 7DE
-              </p>
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-1 h-8 bg-indigo-500 rounded-full"></div>
+              <h2 className="text-3xl font-bold text-white">Platform Description</h2>
             </div>
+            <Card className="bg-[#1a1a24] border-[#2d2d3d]">
+              <CardContent className="p-8">
+                <p className="text-gray-300 leading-relaxed mb-6 text-lg">
+                  YourCareAI provides an enterprise-grade AI health intelligence platform designed for healthcare organizations:
+                </p>
+                <div className="grid md:grid-cols-2 gap-4">
+                  {[
+                    { icon: Code, text: "AI-powered health analytics and insights" },
+                    { icon: Zap, text: "Multi-modal health data processing" },
+                    { icon: Shield, text: "Enterprise security and compliance" },
+                    { icon: Users, text: "Scalable cloud infrastructure" }
+                  ].map((item, index) => (
+                    <div key={index} className="flex items-start gap-3 p-4 bg-[#0a0a0f] border border-[#2d2d3d] rounded-lg">
+                      <item.icon className="w-5 h-5 text-indigo-400 mt-1" />
+                      <span className="text-gray-300">{item.text}</span>
+                    </div>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+          </section>
+
+          {/* Medical Disclaimer */}
+          <section>
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-1 h-8 bg-orange-500 rounded-full"></div>
+              <h2 className="text-3xl font-bold text-white">Medical Disclaimer</h2>
+            </div>
+            <Card className="bg-gradient-to-br from-orange-500/10 to-red-500/10 border-orange-500/30">
+              <CardContent className="p-8">
+                <div className="flex items-start gap-4 mb-6">
+                  <AlertTriangle className="w-8 h-8 text-orange-400 flex-shrink-0" />
+                  <div>
+                    <h3 className="text-xl font-bold text-white mb-2">Important Notice</h3>
+                    <p className="text-orange-200 text-lg font-semibold">
+                      YourCareAI is a technology platform providing AI tools and infrastructure. It is NOT a medical device or healthcare service provider.
+                    </p>
+                  </div>
+                </div>
+                <div className="space-y-3 text-gray-300">
+                  <p className="flex items-start gap-2">
+                    <span className="text-orange-400 mt-1">•</span>
+                    <span>Our platform provides AI models and APIs for integration by qualified healthcare organizations</span>
+                  </p>
+                  <p className="flex items-start gap-2">
+                    <span className="text-orange-400 mt-1">•</span>
+                    <span>Organizations using our platform are responsible for regulatory compliance and medical decisions</span>
+                  </p>
+                  <p className="flex items-start gap-2">
+                    <span className="text-orange-400 mt-1">•</span>
+                    <span>We provide technology infrastructure, not direct medical advice or diagnosis</span>
+                  </p>
+                  <p className="flex items-start gap-2">
+                    <span className="text-orange-400 mt-1">•</span>
+                    <span>Healthcare professionals must validate all AI-generated insights before clinical use</span>
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+          </section>
+
+          {/* Platform Usage */}
+          <section>
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-1 h-8 bg-indigo-500 rounded-full"></div>
+              <h2 className="text-3xl font-bold text-white">Platform Usage Responsibilities</h2>
+            </div>
+            <Card className="bg-[#1a1a24] border-[#2d2d3d]">
+              <CardContent className="p-8">
+                <p className="text-gray-300 mb-6 text-lg">As an organization using YourCareAI's platform, you agree to:</p>
+                <div className="space-y-4">
+                  {[
+                    "Use the platform in compliance with all applicable laws and healthcare regulations",
+                    "Maintain the security and confidentiality of your platform credentials",
+                    "Implement appropriate data protection and privacy measures for end-users",
+                    "Ensure proper regulatory compliance for healthcare applications built with our platform",
+                    "Report any security vulnerabilities or unauthorized access immediately",
+                    "Use the platform according to your subscription tier and usage limits",
+                    "Not attempt to reverse engineer, decompile, or compromise our AI models"
+                  ].map((item, index) => (
+                    <div key={index} className="flex items-start gap-3 p-4 bg-[#0a0a0f] border border-[#2d2d3d] rounded-lg hover:border-indigo-500/50 transition-all">
+                      <span className="text-green-400 text-xl">✓</span>
+                      <span className="text-gray-300">{item}</span>
+                    </div>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+          </section>
+
+          {/* Data & AI Accuracy */}
+          <section>
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-1 h-8 bg-indigo-500 rounded-full"></div>
+              <h2 className="text-3xl font-bold text-white">AI Accuracy & Limitations</h2>
+            </div>
+            <Card className="bg-[#1a1a24] border-[#2d2d3d]">
+              <CardContent className="p-8">
+                <p className="text-gray-300 mb-6 text-lg">
+                  While we maintain high accuracy standards (94% for biomarker analysis), you acknowledge that:
+                </p>
+                <div className="grid md:grid-cols-2 gap-4">
+                  {[
+                    "AI predictions are based on statistical models and may not be 100% accurate",
+                    "Health data from connected devices may contain errors or inconsistencies",
+                    "Our algorithms are continuously improving but not infallible",
+                    "Individual health conditions may not fit standard patterns",
+                    "Healthcare professionals should validate AI insights before clinical decisions",
+                    "Platform performance depends on data quality and completeness"
+                  ].map((item, index) => (
+                    <div key={index} className="p-4 bg-[#0a0a0f] border border-[#2d2d3d] rounded-lg">
+                      <p className="text-gray-300 text-sm">{item}</p>
+                    </div>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+          </section>
+
+          {/* SLA */}
+          <section>
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-1 h-8 bg-green-500 rounded-full"></div>
+              <h2 className="text-3xl font-bold text-white">Platform Availability & SLA</h2>
+            </div>
+            <Card className="bg-gradient-to-br from-green-500/10 to-blue-500/10 border-green-500/30">
+              <CardContent className="p-8">
+                <div className="grid md:grid-cols-3 gap-6 mb-6">
+                  <div className="text-center p-4 bg-[#0a0a0f] border border-green-500/30 rounded-lg">
+                    <div className="text-3xl font-bold text-green-400 mb-2">99.9%</div>
+                    <div className="text-gray-300 text-sm">Uptime Guarantee</div>
+                  </div>
+                  <div className="text-center p-4 bg-[#0a0a0f] border border-blue-500/30 rounded-lg">
+                    <div className="text-3xl font-bold text-blue-400 mb-2">&lt;100ms</div>
+                    <div className="text-gray-300 text-sm">API Response Time</div>
+                  </div>
+                  <div className="text-center p-4 bg-[#0a0a0f] border border-purple-500/30 rounded-lg">
+                    <div className="text-3xl font-bold text-purple-400 mb-2">24/7</div>
+                    <div className="text-gray-300 text-sm">Enterprise Support</div>
+                  </div>
+                </div>
+                <p className="text-gray-300 leading-relaxed">
+                  We strive to maintain 99.9% platform uptime. Scheduled maintenance will be announced in advance. We are not liable for interruptions during scheduled maintenance windows or force majeure events.
+                </p>
+              </CardContent>
+            </Card>
+          </section>
+
+          {/* Intellectual Property */}
+          <section>
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-1 h-8 bg-indigo-500 rounded-full"></div>
+              <h2 className="text-3xl font-bold text-white">Intellectual Property & Data Ownership</h2>
+            </div>
+            <Card className="bg-[#1a1a24] border-[#2d2d3d]">
+              <CardContent className="p-8">
+                <div className="space-y-6">
+                  <div>
+                    <h4 className="text-xl font-semibold text-white mb-3">Our Platform</h4>
+                    <p className="text-gray-300 mb-3">
+                      All platform features, AI models, and functionality are owned by YourCareAI and protected by intellectual property laws. You may not:
+                    </p>
+                    <div className="grid md:grid-cols-2 gap-3">
+                      {[
+                        "Copy or distribute our platform content",
+                        "Use our trademarks without authorization",
+                        "Reverse engineer our AI algorithms",
+                        "Create derivative works from our platform"
+                      ].map((item, index) => (
+                        <div key={index} className="flex items-center gap-2 text-gray-300">
+                          <span className="text-red-400">✗</span>
+                          <span className="text-sm">{item}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                  <div className="p-4 bg-indigo-500/10 border border-indigo-500/30 rounded-lg">
+                    <h4 className="text-lg font-semibold text-white mb-2">Your Data</h4>
+                    <p className="text-indigo-200">
+                      <strong>You retain full ownership</strong> of all data you input into our platform. We only process your data to provide our services and never claim ownership of your information.
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </section>
+
+          {/* Limitation of Liability */}
+          <section>
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-1 h-8 bg-indigo-500 rounded-full"></div>
+              <h2 className="text-3xl font-bold text-white">Limitation of Liability</h2>
+            </div>
+            <Card className="bg-[#1a1a24] border-[#2d2d3d]">
+              <CardContent className="p-8">
+                <p className="text-gray-300 mb-6 text-lg">
+                  To the fullest extent permitted by law, YourCareAI and Digitbite Limited shall not be liable for:
+                </p>
+                <div className="space-y-3">
+                  {[
+                    "Indirect, incidental, or consequential damages arising from platform use",
+                    "Medical decisions made by healthcare organizations using our platform",
+                    "Data processing errors or temporary API response delays",
+                    "Third-party integration failures or service dependencies",
+                    "Damages exceeding the amount paid for platform subscriptions in the past 12 months"
+                  ].map((item, index) => (
+                    <div key={index} className="flex items-start gap-3 p-3 bg-[#0a0a0f] border border-[#2d2d3d] rounded-lg">
+                      <span className="text-gray-500 mt-1">•</span>
+                      <span className="text-gray-300">{item}</span>
+                    </div>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+          </section>
+
+          {/* Governing Law */}
+          <section>
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-1 h-8 bg-indigo-500 rounded-full"></div>
+              <h2 className="text-3xl font-bold text-white">Governing Law & Disputes</h2>
+            </div>
+            <Card className="bg-[#1a1a24] border-[#2d2d3d]">
+              <CardContent className="p-8">
+                <p className="text-gray-300 leading-relaxed text-lg">
+                  These Terms shall be governed by and construed in accordance with the laws of <strong className="text-white">England and Wales</strong>, without regard to conflict of law provisions. Any disputes shall be resolved in the courts of England and Wales.
+                </p>
+              </CardContent>
+            </Card>
+          </section>
+
+          {/* Contact */}
+          <section>
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-1 h-8 bg-indigo-500 rounded-full"></div>
+              <h2 className="text-3xl font-bold text-white">Contact Information</h2>
+            </div>
+            <Card className="bg-gradient-to-br from-indigo-500/10 to-purple-500/10 border-indigo-500/30">
+              <CardContent className="p-8">
+                <p className="text-gray-300 mb-6 text-lg">
+                  Questions about these Terms of Service? Contact our legal team:
+                </p>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <h4 className="text-white font-semibold mb-2">Email</h4>
+                    <p className="text-indigo-400">legal@yourcareai.com</p>
+                  </div>
+                  <div>
+                    <h4 className="text-white font-semibold mb-2">Company</h4>
+                    <p className="text-gray-300">Digitbite Limited</p>
+                  </div>
+                  <div className="md:col-span-2">
+                    <h4 className="text-white font-semibold mb-2">Registered Address</h4>
+                    <p className="text-gray-300">
+                      Suite A 82 James Carter Road<br />
+                      Mildenhall, Bury St. Edmunds<br />
+                      England, IP28 7DE
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           </section>
 
         </div>
