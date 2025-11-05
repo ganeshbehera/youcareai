@@ -46,28 +46,27 @@ const keyAreas = [
 
 export function AboutUs() {
   return (
-    <section id="about-us" className="relative py-16 md:py-24 bg-gradient-to-b from-gray-50/50 to-white overflow-hidden">
+    <section id="about-us" className="relative py-16 md:py-24 bg-[#0a0a0f] overflow-hidden">
       {/* Background decoration */}
-      <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
-      <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-100 rounded-full blur-3xl opacity-20 animate-float-slow"></div>
-      <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-purple-100 rounded-full blur-3xl opacity-20 animate-float-reverse"></div>
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-indigo-600/20 rounded-full blur-3xl animate-float-slow"></div>
+      <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-purple-600/20 rounded-full blur-3xl animate-float-reverse"></div>
 
       <div className="relative z-10 mx-auto max-w-6xl px-4">
         {/* Header */}
         <div className="text-center mb-16">
-          <Badge variant="outline" className="mb-4 px-6 py-2 text-sm font-medium bg-white/80 backdrop-blur-sm border-blue-200">
+          <Badge variant="outline" className="mb-4 px-6 py-2 text-sm font-medium bg-indigo-500/10 border-indigo-500/30 text-indigo-300">
             <Users className="w-4 h-4 mr-2" />
             About YourCareAI
           </Badge>
           
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-gray-900 animate-fade-in">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-white animate-fade-in">
             Meet the Team Building the Future of
-            <span className="block bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            <span className="block bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
               AI Healthcare
             </span>
           </h2>
           
-          <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto animate-fade-in animation-delay-300">
+          <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto animate-fade-in animation-delay-300">
             We're a team of healthcare and AI experts on a mission to revolutionize preventive care through intelligent technology.
           </p>
         </div>
@@ -75,15 +74,15 @@ export function AboutUs() {
         {/* Key Information Cards */}
         <div className="grid md:grid-cols-2 gap-8 mb-16">
           {keyAreas.map((area, index) => (
-            <Card key={area.title} className="bg-white/80 backdrop-blur-sm border-0 shadow-lg hover:shadow-xl transition-all duration-300 animate-fade-in" style={{animationDelay: `${400 + index * 200}ms`}}>
+            <Card key={area.title} className="bg-[#1a1a24] border-[#2d2d3d] hover:border-indigo-500/50 shadow-lg hover:shadow-indigo-500/20 transition-all duration-300 animate-fade-in" style={{animationDelay: `${400 + index * 200}ms`}}>
               <CardContent className="p-8">
                 <div className="flex items-start gap-4">
-                  <div className="p-3 bg-blue-100 rounded-lg shrink-0">
-                    <area.icon className="w-6 h-6 text-blue-600" />
+                  <div className="p-3 rounded-xl bg-indigo-500/10 border border-indigo-500/30">
+                    <area.icon className="w-6 h-6 text-indigo-400" />
                   </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-3">{area.title}</h3>
-                    <p className="text-gray-600 leading-relaxed">{area.content}</p>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-bold mb-3 text-white">{area.title}</h3>
+                    <p className="text-gray-400 leading-relaxed">{area.content}</p>
                   </div>
                 </div>
               </CardContent>
@@ -91,59 +90,49 @@ export function AboutUs() {
           ))}
         </div>
 
-        {/* Team Section */}
+        {/* Team Grid */}
         <div className="mb-12">
-          <div className="text-center mb-12">
-            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 animate-fade-in">
-              Leadership Team
-            </h3>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto animate-fade-in animation-delay-200">
-              Experienced leaders from top healthcare and technology companies, united by a vision to transform healthcare through AI.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <h3 className="text-2xl md:text-3xl font-bold mb-8 text-center text-white">
+            Leadership Team
+          </h3>
+          
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {teamMembers.map((member, index) => (
-              <Card key={member.name} className="bg-white/80 backdrop-blur-sm border-0 shadow-lg hover:shadow-xl transition-all duration-300 group animate-fade-in" style={{animationDelay: `${600 + index * 150}ms`}}>
+              <Card key={member.name} className="bg-[#1a1a24] border-[#2d2d3d] hover:border-indigo-500/50 shadow-lg hover:shadow-indigo-500/20 transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: `${800 + index * 100}ms`}}>
                 <CardContent className="p-6 text-center">
-                  <div className="relative mb-4 mx-auto w-24 h-24 rounded-full overflow-hidden bg-gray-100 group-hover:scale-105 transition-transform duration-300">
-                    <Image
-                      src={member.image}
-                      alt={member.name}
-                      fill
-                      className="object-cover"
-                      sizes="96px"
-                    />
+                  <div className="mb-4 relative">
+                    <div className="w-24 h-24 mx-auto rounded-full overflow-hidden border-2 border-indigo-500/30">
+                      <Image
+                        src={member.image}
+                        alt={member.name}
+                        width={96}
+                        height={96}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
                   </div>
                   
-                  <h4 className="text-lg font-semibold text-gray-900 mb-1">{member.name}</h4>
-                  <p className="text-sm font-medium text-blue-600 mb-3">{member.role}</p>
-                  <p className="text-sm text-gray-600 leading-relaxed">{member.experience}</p>
+                  <h4 className="text-lg font-bold mb-1 text-white">{member.name}</h4>
+                  <p className="text-sm text-indigo-400 font-medium mb-3">{member.role}</p>
+                  <p className="text-sm text-gray-400 leading-relaxed">{member.experience}</p>
                 </CardContent>
               </Card>
             ))}
           </div>
         </div>
 
-        {/* CTA Section */}
-        <div className="text-center">
-          <Card className="bg-gradient-to-r from-blue-600 to-purple-600 border-0 shadow-xl animate-fade-in animation-delay-1000">
-            <CardContent className="p-8">
-              <h3 className="text-2xl font-bold text-white mb-4">
-                Ready to Transform Healthcare with AI?
-              </h3>
-              <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
-                Join us in revolutionizing preventive healthcare. Get early access to our enterprise AI platform and be part of the future of health intelligence.
-              </p>
-              <Button 
-                size="lg" 
-                className="bg-white text-blue-600 hover:bg-gray-100 font-semibold px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
-              >
-                Request Demo
-                <ArrowRight className="w-5 h-5 ml-2" />
-              </Button>
-            </CardContent>
-          </Card>
+        {/* CTA */}
+        <div className="text-center pt-8 animate-fade-in animation-delay-1200">
+          <p className="text-lg text-gray-400 mb-6">
+            Want to learn more about our platform?
+          </p>
+          <Button 
+            size="lg"
+            className="bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white px-8 py-6 text-lg font-semibold rounded-xl shadow-lg shadow-indigo-500/50 hover:shadow-indigo-500/70 transition-all duration-300 hover:scale-105"
+          >
+            Contact Us
+            <ArrowRight className="ml-2 w-5 h-5" />
+          </Button>
         </div>
       </div>
     </section>

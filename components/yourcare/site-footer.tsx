@@ -4,7 +4,7 @@ import Image from "next/image"
 
 export function SiteFooter() {
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-[#0a0a0f] border-t border-[#2d2d3d]">
       <div className="mx-auto max-w-6xl px-4 py-12">
         {/* Main Footer Content */}
         <div className="flex flex-col md:flex-row justify-between items-center mb-8">
@@ -14,28 +14,28 @@ export function SiteFooter() {
               alt="YourCareAI Logo"
               width={120}
               height={48}
-              className="h-8 w-auto"
+              className="h-8 w-auto brightness-110"
             />
           </div>
           
           <nav className="flex flex-wrap gap-6 text-sm">
-            <Link href="/privacy" className="text-gray-300 hover:text-white transition-colors">
+            <Link href="/privacy" className="text-gray-400 hover:text-indigo-400 transition-colors">
               Privacy Policy
             </Link>
-            <Link href="/terms" className="text-gray-300 hover:text-white transition-colors">
+            <Link href="/terms" className="text-gray-400 hover:text-indigo-400 transition-colors">
               Terms of Service
             </Link>
-            <Link href="/contact" className="text-gray-300 hover:text-white transition-colors">
+            <Link href="/contact" className="text-gray-400 hover:text-indigo-400 transition-colors">
               Contact Us
             </Link>
           </nav>
         </div>
 
         {/* Bottom Section */}
-        <div className="border-t border-gray-800 pt-8 space-y-4">
+        <div className="border-t border-[#2d2d3d] pt-8 space-y-4">
           <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
-            <p>© 2026 YourCareAI. Preventing disease with AI.</p>
-            <p className="mt-2 md:mt-0">Built with ❤️ for better health outcomes</p>
+            <p>© 2026 YourCareAI. AI-powered health intelligence.</p>
+            <p className="mt-2 md:mt-0">Built for better healthcare outcomes</p>
           </div>
           
           {/* Company Details */}

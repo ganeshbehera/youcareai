@@ -29,7 +29,8 @@ const integrationCategories = [
       "Blood Pressure Monitors",
       "Smart Scales & Body Composition"
     ],
-    badge: "50+ Devices"
+    badge: "50+ Devices",
+    color: "from-indigo-500 to-purple-500"
   },
   {
     title: "Electronic Health Records",
@@ -43,7 +44,8 @@ const integrationCategories = [
       "NextGen Healthcare",
       "eClinicalWorks"
     ],
-    badge: "FHIR Compatible"
+    badge: "FHIR Compatible",
+    color: "from-green-500 to-emerald-500"
   },
   {
     title: "Cloud Platforms",
@@ -57,7 +59,8 @@ const integrationCategories = [
       "Oracle Health Sciences",
       "Snowflake Health Cloud"
     ],
-    badge: "Multi-Cloud"
+    badge: "Multi-Cloud",
+    color: "from-blue-500 to-cyan-500"
   },
   {
     title: "Data Export & Reporting",
@@ -71,7 +74,8 @@ const integrationCategories = [
       "Real-time Notifications",
       "Scheduled Reports"
     ],
-    badge: "Reporting"
+    badge: "Reporting",
+    color: "from-orange-500 to-red-500"
   }
 ]
 
@@ -87,52 +91,52 @@ export function Integrations() {
         title={modalConfig.title}
         description={modalConfig.description}
       />
-      <section id="integrations" className="relative py-20 md:py-32 bg-white">
+      <section id="integrations" className="relative py-20 md:py-32 bg-[#0a0a0f]">
         <div className="mx-auto max-w-7xl px-4">
           {/* Header */}
           <div className="text-center mb-20">
-            <div className="inline-flex items-center gap-2 px-5 py-2 bg-green-50 rounded-full mb-8 animate-fade-in">
-              <Puzzle className="w-5 h-5 text-green-600" />
-              <span className="text-green-800 font-semibold">Integrations & APIs</span>
+            <div className="inline-flex items-center gap-2 px-5 py-2 bg-green-500/10 border border-green-500/30 rounded-full mb-8 animate-fade-in">
+              <Puzzle className="w-5 h-5 text-green-400" />
+              <span className="text-green-300 font-semibold">Integrations & APIs</span>
             </div>
             
             <h2 className="text-2xl sm:text-3xl md:text-5xl font-black mb-8 animate-fade-in-up animation-delay-300 max-w-4xl mx-auto leading-tight px-4">
-              Connect Everything
+              <span className="text-white">Connect Everything</span>
               <br />
-              <span className="bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-green-400 to-cyan-400 bg-clip-text text-transparent">
                 Deploy Anywhere
               </span>
             </h2>
 
-            <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-4xl mx-auto animate-fade-in-up animation-delay-500 leading-relaxed font-medium px-4">
+            <p className="text-base sm:text-lg md:text-xl text-gray-400 max-w-4xl mx-auto animate-fade-in-up animation-delay-500 leading-relaxed font-medium px-4">
               Our platform integrates with your existing healthcare ecosystem. 
-              <strong className="text-gray-900"> No data silos, no vendor lock-in.</strong>
+              <strong className="text-white"> No data silos, no vendor lock-in.</strong>
             </p>
           </div>
 
           {/* Integration Categories */}
           <div className="grid md:grid-cols-2 gap-8 mb-20">
             {integrationCategories.map((category, index) => (
-              <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg bg-white animate-fade-in-up" style={{ animationDelay: `${0.7 + index * 0.1}s` }}>
+              <Card key={index} className="group hover:shadow-xl hover:shadow-indigo-500/20 transition-all duration-300 border-[#2d2d3d] hover:border-indigo-500/50 bg-[#1a1a24] animate-fade-in-up" style={{ animationDelay: `${0.7 + index * 0.1}s` }}>
                 <CardContent className="p-8">
                   <div className="flex items-start gap-4 mb-6">
-                    <div className="p-3 bg-gradient-to-br from-green-500 to-blue-600 rounded-xl text-white group-hover:scale-110 transition-transform duration-300">
+                    <div className={`p-3 bg-gradient-to-br ${category.color} rounded-xl text-white group-hover:scale-110 transition-transform duration-300`}>
                       <category.icon className="w-6 h-6" />
                     </div>
                     <div className="flex-1">
                       <div className="flex items-center gap-3 mb-2">
-                        <h3 className="text-xl font-bold text-gray-900">{category.title}</h3>
-                        <Badge variant="secondary" className="text-xs">{category.badge}</Badge>
+                        <h3 className="text-xl font-bold text-white">{category.title}</h3>
+                        <Badge variant="secondary" className="text-xs bg-indigo-500/10 border-indigo-500/30 text-indigo-300">{category.badge}</Badge>
                       </div>
-                      <p className="text-gray-600 leading-relaxed mb-4">{category.description}</p>
+                      <p className="text-gray-400 leading-relaxed mb-4">{category.description}</p>
                     </div>
                   </div>
                   
                   <div className="grid grid-cols-1 gap-2">
                     {category.integrations.map((integration, intIndex) => (
                       <div key={intIndex} className="flex items-center gap-3 py-1">
-                        <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0" />
-                        <span className="text-gray-700 text-sm">{integration}</span>
+                        <CheckCircle className="w-4 h-4 text-green-400 flex-shrink-0" />
+                        <span className="text-gray-300 text-sm">{integration}</span>
                       </div>
                     ))}
                   </div>
@@ -142,14 +146,14 @@ export function Integrations() {
           </div>
 
           {/* Platform Integration */}
-          <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-3xl p-8 md:p-12 text-white animate-fade-in-up animation-delay-1100">
+          <div className="bg-gradient-to-br from-indigo-600 to-purple-600 rounded-3xl p-8 md:p-12 text-white animate-fade-in-up animation-delay-1100 border border-indigo-500/30">
             <div className="text-center">
               <div className="flex items-center justify-center gap-2 mb-6">
                 <Globe className="w-6 h-6 text-green-400" />
-                <Badge className="bg-green-500/20 text-green-400 border-green-500/30">Enterprise Ready</Badge>
+                <Badge className="bg-green-500/20 text-green-300 border-green-500/30">Enterprise Ready</Badge>
               </div>
               <h3 className="text-2xl md:text-3xl font-bold mb-6">Seamless Healthcare Integration</h3>
-              <p className="text-gray-300 leading-relaxed mb-8 max-w-3xl mx-auto">
+              <p className="text-indigo-100 leading-relaxed mb-8 max-w-3xl mx-auto">
                 Our platform integrates seamlessly with your existing healthcare infrastructure. 
                 Connect with EHR systems, medical devices, and health platforms without disrupting your workflow.
               </p>
@@ -157,7 +161,7 @@ export function Integrations() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button 
                   onClick={() => openModal("Request Integration Demo", "See how our platform integrates with your existing healthcare systems and workflows.")}
-                  className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 font-semibold rounded-xl"
+                  className="bg-white text-indigo-600 hover:bg-gray-100 px-6 py-3 font-semibold rounded-xl shadow-lg"
                 >
                   Request Demo
                   <ArrowRight className="ml-2 w-5 h-5" />

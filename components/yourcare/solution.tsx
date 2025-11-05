@@ -14,8 +14,9 @@ const features = [
     metric: "500+",
     metricLabel: "biomarkers",
     color: "from-blue-500 to-blue-600",
-    bgColor: "bg-blue-50",
-    iconColor: "text-blue-600"
+    bgColor: "bg-blue-500/10",
+    iconColor: "text-blue-400",
+    borderColor: "border-blue-500/30"
   },
   {
     title: "Healthcare System Integration",
@@ -24,8 +25,9 @@ const features = [
     metric: "99.9%",
     metricLabel: "uptime SLA",
     color: "from-green-500 to-green-600",
-    bgColor: "bg-green-50",
-    iconColor: "text-green-600"
+    bgColor: "bg-green-500/10",
+    iconColor: "text-green-400",
+    borderColor: "border-green-500/30"
   },
   {
     title: "Scalable Cloud Infrastructure",
@@ -34,8 +36,9 @@ const features = [
     metric: "<100ms",
     metricLabel: "response time",
     color: "from-purple-500 to-purple-600",
-    bgColor: "bg-purple-50",
-    iconColor: "text-purple-600"
+    bgColor: "bg-purple-500/10",
+    iconColor: "text-purple-400",
+    borderColor: "border-purple-500/30"
   },
   {
     title: "Advanced ML Pipeline",
@@ -44,8 +47,9 @@ const features = [
     metric: "24/7",
     metricLabel: "ML monitoring",
     color: "from-orange-500 to-orange-600",
-    bgColor: "bg-orange-50",
-    iconColor: "text-orange-600"
+    bgColor: "bg-orange-500/10",
+    iconColor: "text-orange-400",
+    borderColor: "border-orange-500/30"
   },
 ]
 
@@ -60,83 +64,89 @@ export function Solution() {
         title={modalConfig.title}
         description={modalConfig.description}
       />
-    <section id="solution" className="relative py-20 md:py-32 bg-gradient-to-b from-gray-50 to-white">
-      <div className="mx-auto max-w-6xl px-4">
-        <div className="text-center mb-20">
-          <div className="inline-flex items-center gap-2 px-5 py-2 bg-green-50 rounded-full mb-8 animate-fade-in">
-            <CheckCircle className="w-5 h-5 text-green-600" />
-            <span className="text-green-800 font-semibold">AI Platform</span>
+      <section id="solution" className="relative py-20 md:py-32 bg-[#0a0a0f]">
+        <div className="mx-auto max-w-6xl px-4">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-2 px-5 py-2 bg-indigo-500/10 border border-indigo-500/30 rounded-full mb-8 animate-fade-in">
+              <Sparkles className="w-5 h-5 text-indigo-400" />
+              <span className="text-indigo-300 font-semibold">Our Platform</span>
+            </div>
+            
+            <h2 className="text-2xl sm:text-3xl md:text-5xl font-black mb-6 animate-fade-in-up animation-delay-300 max-w-4xl mx-auto leading-tight">
+              <span className="text-white">Enterprise AI Platform</span>
+              <br />
+              <span className="bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">For Health Intelligence</span>
+            </h2>
+            
+            <p className="text-base sm:text-lg md:text-xl text-gray-400 max-w-4xl mx-auto animate-fade-in-up animation-delay-500 leading-relaxed font-medium">
+              Our cloud-native SaaS platform processes 500+ biomarkers using transformer models and deep learning. 
+              <strong className="text-white"> Deploy in your organization in minutes with 99.9% uptime SLA.</strong>
+            </p>
           </div>
-          
-                    <h2 className="text-2xl sm:text-3xl md:text-5xl font-black mb-8 animate-fade-in-up animation-delay-300 max-w-4xl mx-auto leading-tight px-4">
-            Enterprise AI Platform
-            <br />
-            <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              For Health Intelligence
-            </span>
-          </h2>
 
-          <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-4xl mx-auto animate-fade-in-up animation-delay-500 leading-relaxed font-medium px-4">
-            Our cloud-native SaaS platform processes 500+ biomarkers using transformer models and deep learning.
-            <strong className="text-gray-900"> Deploy in your organization in minutes</strong> with 99.9% uptime SLA.
-          </p>
-        </div>
-
-        {/* Features Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 mb-12 sm:mb-16 px-4">
-          {features.map(({ title, Icon, desc, metric, metricLabel, color, bgColor, iconColor }, index) => (
-            <Card 
-              key={title} 
-              className={`group border-0 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 animate-scale-in overflow-hidden`}
-              style={{ animationDelay: `${1.5 + index * 0.2}s` }}
-            >
-              <div className={`absolute inset-0 bg-gradient-to-br ${color} opacity-0 group-hover:opacity-5 transition-opacity duration-500`}></div>
-              
-              <CardHeader className="relative">
-                <div className="flex items-center justify-between mb-4">
-                  <div className={`inline-flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-xl ${bgColor} group-hover:scale-110 transition-transform duration-300`}>
-                    <Icon size={24} className={`sm:w-7 sm:h-7 ${iconColor}`} />
-                  </div>
-                  <div className="text-right">
-                    <div className={`text-2xl sm:text-3xl font-bold bg-gradient-to-r ${color} bg-clip-text text-transparent`}>
-                      {metric}
+          {/* Features Grid */}
+          <div className="grid sm:grid-cols-2 gap-6 mb-16">
+            {features.map((feature, index) => (
+              <Card 
+                key={index} 
+                className={`${feature.bgColor} border ${feature.borderColor} bg-[#1a1a24] hover:border-indigo-500/50 transition-all duration-300 hover:scale-105 animate-fade-in-up`}
+                style={{ animationDelay: `${0.7 + index * 0.15}s` }}
+              >
+                <CardHeader>
+                  <div className="flex items-start justify-between mb-4">
+                    <div className={`p-3 rounded-xl ${feature.bgColor} border ${feature.borderColor}`}>
+                      <feature.Icon className={`w-6 h-6 ${feature.iconColor}`} />
                     </div>
-                    <div className="text-xs text-gray-500 uppercase tracking-wide">{metricLabel}</div>
+                    <div className="text-right">
+                      <div className={`text-2xl font-bold bg-gradient-to-r ${feature.color} bg-clip-text text-transparent`}>
+                        {feature.metric}
+                      </div>
+                      <div className="text-xs text-gray-500 font-medium">{feature.metricLabel}</div>
+                    </div>
                   </div>
-                </div>
-                <CardTitle className="text-lg sm:text-xl font-bold text-gray-900 group-hover:text-gray-700 transition-colors">
-                  {title}
-                </CardTitle>
-              </CardHeader>
-              
-              <CardContent className="relative">
-                <p className="text-gray-600 leading-relaxed text-sm sm:text-base">
-                  {desc}
-                </p>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-
-        {/* Call to Action */}
-        <div className="text-center animate-fade-in-up animation-delay-3000 px-4">
-          <div className="flex flex-col sm:inline-flex sm:flex-row items-center gap-2 mb-6">
-            <Sparkles className="w-5 h-5 text-blue-600 animate-pulse" />
-            <span className="text-base sm:text-lg font-semibold text-gray-700 text-center">Ready to integrate our AI platform?</span>
-            <Sparkles className="w-5 h-5 text-blue-600 animate-pulse" />
+                  <CardTitle className="text-xl font-bold text-white">{feature.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-400 leading-relaxed">{feature.desc}</p>
+                </CardContent>
+              </Card>
+            ))}
           </div>
-          
-          <Button 
-            size="lg" 
-            onClick={() => openModal("Get Platform Access", "Ready to transform your healthcare organization with AI intelligence? Request early access to our platform.")}
-            className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-6 sm:px-8 py-4 text-base sm:text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-full sm:w-auto"
-          >
-            Request Platform Access
-            <CheckCircle className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
-          </Button>
+
+          {/* Key Benefits */}
+          <div className="bg-gradient-to-r from-indigo-500/10 to-purple-500/10 border border-indigo-500/30 rounded-3xl p-8 md:p-12 mb-12 animate-fade-in-up animation-delay-1300">
+            <h3 className="text-2xl md:text-3xl font-bold text-white mb-8 text-center">
+              Why Healthcare Organizations Choose Us
+            </h3>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {[
+                "HIPAA & SOC 2 compliant",
+                "99.9% uptime SLA guarantee",
+                "Real-time data processing",
+                "Enterprise-grade security",
+                "Dedicated support team",
+                "Scalable infrastructure"
+              ].map((benefit, index) => (
+                <div key={index} className="flex items-center gap-3 animate-fade-in" style={{ animationDelay: `${1.5 + index * 0.1}s` }}>
+                  <CheckCircle className="w-5 h-5 text-green-400 flex-shrink-0" />
+                  <span className="text-gray-300 font-medium">{benefit}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* CTA */}
+          <div className="text-center animate-fade-in-up animation-delay-1700">
+            <Button 
+              size="lg"
+              onClick={() => openModal("Request Platform Access", "Join leading healthcare organizations transforming care with AI. Get early access to our enterprise platform launching Q2 2026.")}
+              className="bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white px-8 py-6 text-lg font-semibold rounded-xl shadow-lg shadow-indigo-500/50 hover:shadow-indigo-500/70 transition-all duration-300 hover:scale-105"
+            >
+              Request Platform Access
+            </Button>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
     </>
   )
 }
