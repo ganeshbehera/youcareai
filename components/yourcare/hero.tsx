@@ -43,12 +43,12 @@ export function Hero() {
             {/* Badge */}
             <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-indigo-500/30 bg-indigo-500/10 backdrop-blur-sm animate-fade-in animation-delay-300">
               <Sparkles className="w-4 h-4 text-indigo-400" />
-              <span className="text-sm font-semibold text-indigo-300">Launching Q2 2026 • AI-Powered Healthcare</span>
+              <span className="text-sm font-semibold text-indigo-300">Tech Startup • SaaS Platform • Launching Q2 2026</span>
             </div>
 
             {/* Main headline */}
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in-up animation-delay-500 max-w-5xl">
-              <span className="text-white">Enterprise AI Platform for</span>
+              <span className="text-white">Enterprise AI SaaS Platform for</span>
               <br />
               <span className="bg-gradient-to-r from-indigo-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
                 Health Intelligence
@@ -57,8 +57,8 @@ export function Hero() {
 
             {/* Subtitle */}
             <p className="text-lg sm:text-xl md:text-2xl text-gray-400 max-w-3xl animate-fade-in-up animation-delay-700 leading-relaxed">
-              Cloud-native SaaS platform processing <span className="text-white font-semibold">500+ biomarkers</span> with AI. 
-              Enterprise-grade with <span className="text-white font-semibold">99.9% uptime SLA</span>.
+              <strong className="text-white">Digital-native tech startup</strong> building a cloud-native SaaS platform that processes <span className="text-white font-semibold">500+ biomarkers</span> with AI. 
+              Enterprise-grade tool with <span className="text-white font-semibold">99.9% uptime SLA</span>.
             </p>
 
             {/* Stats */}
